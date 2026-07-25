@@ -1,0 +1,136 @@
+.footer {
+  background: var(--purple-950);
+  color: rgba(255, 255, 255, 0.88);
+  padding-top: 3.5rem;
+}
+
+.footer__grid {
+  display: grid;
+  grid-template-columns: 1.4fr 0.8fr 0.9fr 1.1fr;
+  gap: 2.5rem 2rem;
+  padding-bottom: 2.75rem;
+}
+
+.footer__logo {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  margin-bottom: 1rem;
+  color: var(--white);
+}
+
+.footer__logo img {
+  border-radius: 50%;
+  object-fit: contain;
+  background: transparent;
+}
+
+.footer__logo strong {
+  display: block;
+  font-size: 1.05rem;
+}
+
+.footer__logo small {
+  display: block;
+  font-size: 0.75rem;
+  opacity: 0.75;
+  margin-top: 0.1rem;
+}
+
+.footer__brand p {
+  font-size: 0.9rem;
+  line-height: 1.65;
+  max-width: 22rem;
+  margin-bottom: 1.15rem;
+  opacity: 0.85;
+}
+
+.footer__socials {
+  display: flex;
+  gap: 0.55rem;
+}
+
+.footer__socials a {
+  display: grid;
+  place-items: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--white);
+  transition: background 0.2s ease;
+}
+
+.footer__socials a:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.footer h3 {
+  color: var(--white);
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.footer__links {
+  display: grid;
+  gap: 0.55rem;
+}
+
+.footer__links a {
+  font-size: 0.9rem;
+  opacity: 0.82;
+  transition: opacity 0.2s ease, padding-left 0.2s ease;
+}
+
+.footer__links a:hover {
+  opacity: 1;
+  padding-left: 0.2rem;
+}
+
+.footer__contact {
+  display: grid;
+  gap: 0.75rem;
+}
+
+.footer__contact li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.65rem;
+  font-size: 0.9rem;
+  opacity: 0.88;
+}
+
+.footer__contact a:hover {
+  text-decoration: underline;
+}
+
+.footer__bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  padding: 1.1rem 0;
+  font-size: 0.82rem;
+}
+
+.footer__bottom-inner {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  opacity: 0.8;
+}
+
+.footer__bottom a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+  .footer__grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 560px) {
+  .footer__grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}

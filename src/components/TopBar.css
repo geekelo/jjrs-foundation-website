@@ -1,0 +1,72 @@
+.topbar {
+  background: var(--purple-900);
+  color: var(--white);
+  font-size: 0.8rem;
+}
+
+.topbar__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  min-height: 2.35rem;
+}
+
+.topbar__prayer {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.85rem 1.25rem;
+  opacity: 0.95;
+}
+
+.topbar__join {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-weight: 500;
+  opacity: 0.95;
+  transition: opacity 0.2s ease;
+}
+
+.topbar__join:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+.topbar__socials {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+}
+
+.topbar__socials a {
+  display: grid;
+  place-items: center;
+  width: 1.55rem;
+  height: 1.55rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.12);
+  transition: background 0.2s ease;
+}
+
+.topbar__socials a:hover {
+  background: rgba(255, 255, 255, 0.22);
+}
+
+@media (max-width: 640px) {
+  .topbar__inner {
+    justify-content: center;
+    padding-block: 0.45rem;
+  }
+
+  .topbar__socials {
+    display: none;
+  }
+
+  .topbar__prayer {
+    justify-content: center;
+    text-align: center;
+    font-size: 0.75rem;
+  }
+}
