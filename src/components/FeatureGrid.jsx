@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import {
   IconInfo,
   IconCalendar,
@@ -8,6 +9,8 @@ import {
   IconHeart,
   IconUsers,
   IconArrow,
+  IconSun,
+  IconPray,
 } from './Icons'
 import './FeatureGrid.css'
 
@@ -28,6 +31,10 @@ const images = {
   library:
     'https://images.unsplash.com/photo-1481627834876-b7833e8f5040?auto=format&fit=crop&w=600&q=80',
   cla: 'https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&w=600&q=80',
+  devotion:
+    'https://images.unsplash.com/photo-1507692049790-de58290a4334?auto=format&fit=crop&w=600&q=80',
+  prayer:
+    'https://images.unsplash.com/photo-1438232998663-adf9c73b0b9b?auto=format&fit=crop&w=600&q=80',
   donate:
     'https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?auto=format&fit=crop&w=600&q=80',
 }
@@ -36,7 +43,7 @@ const cards = [
   {
     id: 'about',
     icon: IconInfo,
-    title: 'About JJRSF',
+    title: 'JJRSF Brochure',
     description:
       'Discover our mission, vision, and the heart behind a foundation built on grace, faith, and love.',
     cta: 'Learn More',
@@ -64,16 +71,6 @@ const cards = [
     image: images.tv,
   },
   {
-    id: 'album',
-    icon: IconCamera,
-    title: 'JJRS Photo Album',
-    description:
-      'See moments of impact — worship, outreach, and lives transformed across the nations.',
-    cta: 'Explore',
-    href: '#media',
-    collage: [images.album1, images.album2, images.album3, images.album4],
-  },
-  {
     id: 'library',
     icon: IconBook,
     title: 'JJRS e-Library',
@@ -92,6 +89,36 @@ const cards = [
     cta: 'Learn More',
     href: '#resources',
     image: images.cla,
+  },
+  {
+    id: 'devotion',
+    icon: IconSun,
+    title: '360 Devotional',
+    description:
+      'Grow daily with year-round devotionals that draw you closer to Christ and His truth.',
+    cta: 'Read Today',
+    href: '#resources',
+    image: images.devotion,
+  },
+  {
+    id: 'prayer-schedule',
+    icon: IconPray,
+    title: 'Prayer Schedule',
+    description:
+      'Stay aligned with our daily and special prayer times as we seek God together.',
+    cta: 'View Schedule',
+    href: '#pray',
+    image: images.prayer,
+  },
+  {
+    id: 'album',
+    icon: IconCamera,
+    title: 'JJRS Photo Album',
+    description:
+      'See moments of impact — worship, outreach, and lives transformed across the nations.',
+    cta: 'Explore',
+    href: '#media',
+    collage: [images.album1, images.album2, images.album3, images.album4],
   },
   {
     id: 'donate',
@@ -121,6 +148,7 @@ export default function FeatureGrid() {
               media: 'media',
               library: 'resources',
               donate: 'donate',
+              'prayer-schedule': 'prayer-schedule',
             }
             return (
               <article
@@ -128,46 +156,46 @@ export default function FeatureGrid() {
                 className={`feature-card ${card.featured ? 'feature-card--featured' : ''}`}
                 id={sectionIds[card.id]}
               >
-              <div className="feature-card__icon" aria-hidden="true">
-                <Icon size={18} />
-              </div>
-              <h2 className="feature-card__title">{card.title}</h2>
-
-              {card.collage ? (
-                <div className="feature-card__collage">
-                  {card.collage.map((src) => (
-                    <img key={src} src={src} alt="" loading="lazy" />
-                  ))}
+                <div className="feature-card__icon" aria-hidden="true">
+                  <Icon size={18} />
                 </div>
-              ) : (
-                <div className="feature-card__image">
-                  <img src={card.image} alt="" loading="lazy" />
-                </div>
-              )}
+                <h2 className="feature-card__title">{card.title}</h2>
 
-              <p className="feature-card__desc">{card.description}</p>
-              <a href={card.href} className="feature-card__link">
-                {card.cta}
-                <IconArrow />
-              </a>
-            </article>
-          )
-        })}
+                {card.collage ? (
+                  <div className="feature-card__collage">
+                    {card.collage.map((src) => (
+                      <img key={src} src={src} alt="" loading="lazy" />
+                    ))}
+                  </div>
+                ) : (
+                  <div className="feature-card__image">
+                    <img src={card.image} alt="" loading="lazy" />
+                  </div>
+                )}
 
-        <aside className="feature-cta" id="involved">
-          <div className="feature-cta__icon" aria-hidden="true">
-            <IconUsers size={22} />
-          </div>
-          <h2>Be Part of Something Bigger</h2>
-          <p>
-            Volunteer, partner, or pray with us as we grow in grace and impact
-            nations together.
-          </p>
-          <a href="#involved" className="feature-card__link">
-            Join the Family
-            <IconArrow />
-          </a>
-        </aside>
+                <p className="feature-card__desc">{card.description}</p>
+                <a href={card.href} className="feature-card__link">
+                  {card.cta}
+                  <IconArrow />
+                </a>
+              </article>
+            )
+          })}
+
+          <aside className="feature-cta" id="involved">
+            <div className="feature-cta__icon" aria-hidden="true">
+              <IconUsers size={22} />
+            </div>
+            <h2>Be Part of Something Bigger</h2>
+            <p>
+              Volunteer, partner, or pray with us as we grow in grace and impact
+              nations together.
+            </p>
+            <Link to="/get-involved" className="feature-card__link">
+              Join the Family
+              <IconArrow />
+            </Link>
+          </aside>
         </div>
       </div>
     </section>

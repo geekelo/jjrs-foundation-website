@@ -115,6 +115,15 @@ export function IconBook({ size = 18 }) {
   )
 }
 
+export function IconSun({ size = 18 }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
+      <circle cx="12" cy="12" r="4" />
+      <path d="M12 2v2.5M12 19.5V22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M2 12h2.5M19.5 12H22M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8" />
+    </svg>
+  )
+}
+
 export function IconGrad({ size = 18 }) {
   return (
     <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
@@ -188,6 +197,75 @@ export function IconClose({ size = 22 }) {
   return (
     <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
       <path d="M6 6l12 12M18 6 6 18" />
+    </svg>
+  )
+}
+
+export function IconWhatsapp({ size = 18 }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M12.04 2C6.58 2 2.15 6.4 2.15 11.84c0 1.96.52 3.8 1.44 5.4L2 22l4.92-1.55a9.9 9.9 0 0 0 5.12 1.4h.01c5.46 0 9.89-4.4 9.89-9.84S17.5 2 12.04 2zm5.76 13.99c-.24.68-1.4 1.24-1.94 1.32-.5.07-1.13.1-1.82-.11-.42-.13-.96-.31-1.65-.61-2.9-1.25-4.78-4.16-4.93-4.35-.14-.19-1.2-1.6-1.2-3.05s.74-2.16 1.03-2.46c.24-.25.64-.37 1.02-.37.12 0 .24 0 .34.01.3.01.45.03.65.5.24.58.82 2 .89 2.15.07.15.12.32.02.52-.1.21-.15.34-.3.52-.14.18-.3.4-.43.54-.14.15-.29.31-.12.6.16.29.73 1.2 1.57 1.94 1.08.96 1.98 1.26 2.29 1.41.3.14.48.12.66-.07.19-.2.8-.93 1.02-1.25.21-.32.43-.26.72-.15.3.1 1.88.89 2.2 1.05.32.16.54.24.62.37.08.14.08.79-.16 1.47z" />
+    </svg>
+  )
+}
+
+export function IconTiktok({ size = 18 }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M19.6 7.1A5.4 5.4 0 0 1 16.3 6V4.2a7.3 7.3 0 0 0 2.1.3V2a9.3 9.3 0 0 1-4.4-.1v12.3a4.2 4.2 0 1 1-3.6-4.15V12a2 2 0 1 0 1.4 1.9V2.1c2.2.1 4.2.9 5.8 2.3a7.4 7.4 0 0 0 2 .7v2z" />
+    </svg>
+  )
+}
+
+export function IconTelegram({ size = 18 }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M21.7 4.3 3.9 11.2c-1.2.5-1.2 1.2-.2 1.5l4.6 1.4 1.8 5.4c.2.7.1.9.8.9.5 0 .7-.2 1-.5l2.3-2.2 4.8 3.5c.9.5 1.5.2 1.7-.8L23 5.4c.3-1.2-.4-1.7-1.3-1.1zM9.7 14.6l-.3 3.5-1.2-3.9L17.6 8l-7.9 6.6z" />
+    </svg>
+  )
+}
+
+export function IconBriefcase({ size = 18 }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
+      <rect x="3" y="7" width="18" height="13" rx="2" />
+      <path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M3 12h18" />
+    </svg>
+  )
+}
+
+export function IconCross({ size = 18 }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
+      <path d="M12 3v18M7 8h10" />
+    </svg>
+  )
+}
+
+export function IconSchool({ size = 18 }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
+      <path d="m3 10 9-5 9 5-9 5-9-5z" />
+      <path d="M7 12.5V17c0 .8 2.2 2 5 2s5-1.2 5-2v-4.5" />
+    </svg>
+  )
+}
+
+export function IconHandshake({ size = 18 }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
+      <path d="M8 13.5 5.5 11a2.1 2.1 0 0 1 0-3L8 5.5" />
+      <path d="M16 13.5 18.5 11a2.1 2.1 0 0 0 0-3L16 5.5" />
+      <path d="m8.5 10.5 2 2a2 2 0 0 0 2.8 0l.7-.7a1.5 1.5 0 0 1 2.1 0l1.4 1.4" />
+      <path d="m7 14 2.5 2.5a3 3 0 0 0 4.2 0L17 13" />
+    </svg>
+  )
+}
+
+export function IconBuilding({ size = 18 }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
+      <path d="M4 21V5a1 1 0 0 1 1-1h8a1 1 0 0 1 1 1v16M13 10h6a1 1 0 0 1 1 1v10M8 8h2M8 12h2M8 16h2M16 14h2M16 18h2" />
     </svg>
   )
 }

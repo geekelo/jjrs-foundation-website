@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom'
 import { IconUsers, IconHeart } from './Icons'
 import slide1 from '../assets/hero/slide-1.jpg'
 import slide2 from '../assets/hero/slide-2.jpg'
@@ -65,10 +66,10 @@ export default function Hero() {
             truth.
           </p>
           <div className="hero__actions reveal reveal-delay-3">
-            <a href="#involved" className="btn btn-primary">
+            <Link to="/get-involved" className="btn btn-primary">
               <IconUsers size={16} />
               Get Involved
-            </a>
+            </Link>
             <a href="#donate" className="btn btn-outline">
               <IconHeart size={15} />
               Give / Donate

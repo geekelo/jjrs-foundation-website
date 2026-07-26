@@ -70,11 +70,13 @@
   color: var(--purple-900);
 }
 
+.nav__link--active,
 .nav__item--active .nav__link {
   color: var(--purple-900);
   font-weight: 600;
 }
 
+.nav__link--active::after,
 .nav__item--active .nav__link::after {
   content: '';
   position: absolute;
@@ -200,6 +202,7 @@
     border-bottom: 1px solid var(--border);
   }
 
+  .nav__link--active::after,
   .nav__item--active .nav__link::after {
     display: none;
   }

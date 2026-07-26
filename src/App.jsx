@@ -1,27 +1,23 @@
-import TopBar from './components/TopBar'
-import Header from './components/Header'
-import Hero from './components/Hero'
-import FeatureGrid from './components/FeatureGrid'
-import PrayerBanner from './components/PrayerBanner'
-import StatsBar from './components/StatsBar'
-import Newsletter from './components/Newsletter'
-import Footer from './components/Footer'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Layout from './layouts/Layout'
+import HomePage from './pages/HomePage'
+import GetInvolvedPage from './pages/GetInvolvedPage'
+import CareersPage from './pages/CareersPage'
+import ScrollToTop from './components/ScrollToTop'
 import './App.css'
 
 function App() {
   return (
-    <div className="page">
-      <TopBar />
-      <Header />
-      <main>
-        <Hero />
-        <FeatureGrid />
-        <PrayerBanner />
-        <StatsBar />
-        <Newsletter />
-      </main>
-      <Footer />
-    </div>
+    <BrowserRouter>
+      <ScrollToTop />
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<HomePage />} />
+          <Route path="get-involved" element={<GetInvolvedPage />} />
+          <Route path="careers" element={<CareersPage />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   )
 }
 

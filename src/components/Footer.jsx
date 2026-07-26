@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import logo from '../assets/logo.png'
 import {
   IconFacebook,
@@ -11,19 +12,20 @@ import {
 import './Footer.css'
 
 const quickLinks = [
-  { label: 'About Us', href: '#about' },
-  { label: 'Events', href: '#events' },
-  { label: 'Media', href: '#media' },
-  { label: 'Get Involved', href: '#involved' },
-  { label: 'Give / Donate', href: '#donate' },
+  { label: 'About Us', to: '/get-involved#about-jjrsf' },
+  { label: 'Events', to: '/#events' },
+  { label: 'Media', to: '/#media' },
+  { label: 'Get Involved', to: '/get-involved' },
+  { label: 'Give / Donate', to: '/#donate' },
+  { label: 'Careers', to: '/careers' },
 ]
 
 const resources = [
-  { label: 'Blog', href: '#resources' },
-  { label: 'Devotionals', href: '#resources' },
-  { label: 'Sermons', href: '#media' },
-  { label: 'e-Library', href: '#resources' },
-  { label: 'Christian Learning Academy', href: '#resources' },
+  { label: 'Blog', to: '/#resources' },
+  { label: 'Devotionals', to: '/#resources' },
+  { label: 'Sermons', to: '/#media' },
+  { label: 'e-Library', to: '/#resources' },
+  { label: 'Christian Learning Academy', to: '/#resources' },
 ]
 
 const socials = [
@@ -38,7 +40,7 @@ export default function Footer() {
     <footer className="footer">
       <div className="container footer__grid">
         <div className="footer__brand">
-          <a href="#" className="footer__logo">
+          <Link to="/" className="footer__logo">
             <img
               src={logo}
               alt="Jesus Jireh Rapha Support Foundation"
@@ -47,9 +49,9 @@ export default function Footer() {
             />
             <span>
               <strong>JJRS Foundation</strong>
-              <small>Grace. Faith. Love.</small>
+              <small>Prayer. Love. Partner.</small>
             </span>
-          </a>
+          </Link>
           <p>
             Growing in grace, building lives, and impacting nations through
             programs rooted in integrity, selflessness, and excellence.
@@ -70,7 +72,7 @@ export default function Footer() {
           <ul className="footer__links">
             {quickLinks.map((link) => (
               <li key={link.label}>
-                <a href={link.href}>{link.label}</a>
+                <Link to={link.to}>{link.label}</Link>
               </li>
             ))}
           </ul>
@@ -81,7 +83,7 @@ export default function Footer() {
           <ul className="footer__links">
             {resources.map((link) => (
               <li key={link.label}>
-                <a href={link.href}>{link.label}</a>
+                <Link to={link.to}>{link.label}</Link>
               </li>
             ))}
           </ul>

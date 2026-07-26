@@ -1,36 +1,53 @@
 import { useState } from 'react'
+import { Link, NavLink } from 'react-router-dom'
 import logo from '../assets/logo.png'
 import { IconHeart, IconChevron, IconMenu, IconClose } from './Icons'
 import './Header.css'
 
 const navItems = [
-  { label: 'Home', href: '#', active: true },
-  { label: 'About', href: '#about' },
-  { label: 'Events', href: '#events' },
+  { label: 'Home', to: '/' },
+  { label: 'About', to: '/get-involved#about-jjrsf' },
+  { label: 'Events', to: '/#events' },
   {
     label: 'Media',
-    href: '#media',
-    children: ['JJRS TV & Radio', 'Photo Album', 'Sermons'],
+    to: '/#media',
+    children: [
+      { label: 'JJRS TV & Radio', to: '/#media' },
+      { label: 'Photo Album', to: '/#media' },
+      { label: 'Sermons', to: '/#media' },
+    ],
   },
   {
     label: 'Resources',
-    href: '#resources',
-    children: ['e-Library', 'Blog', 'Devotionals'],
+    to: '/#resources',
+    children: [
+      { label: 'e-Library', to: '/#resources' },
+      { label: 'Blog', to: '/#resources' },
+      { label: 'Devotionals', to: '/#resources' },
+    ],
   },
   {
     label: 'Get Involved',
-    href: '#involved',
-    children: ['Volunteer', 'Partner', 'Pray With Us'],
+    to: '/get-involved',
+    children: [
+      { label: 'Initiatives', to: '/get-involved#initiatives-heading' },
+      { label: 'Social Outlets', to: '/get-involved#connect' },
+      { label: 'Careers', to: '/careers' },
+    ],
   },
 ]
 
 export default function Header() {
   const [open, setOpen] = useState(false)
 
+  function closeMenu() {
+    setOpen(false)
+  }
+
   return (
     <header className="header">
       <div className="container header__inner">
-        <a href="#" className="brand" aria-label="JJRS Foundation home">
+        <Link to="/" className="brand" aria-label="JJRS Foundation home" onClick={closeMenu}>
           <img
             src={logo}
             alt="Jesus Jireh Rapha Support Foundation"
@@ -40,26 +57,35 @@ export default function Header() {
           />
           <span className="brand__text">
             <span className="brand__name">JJRS Foundation</span>
-            <span className="brand__tagline">Grace. Faith. Love.</span>
+            <span className="brand__tagline">Prayer. Love. Partner.</span>
           </span>
-        </a>
+        </Link>
 
         <nav className={`nav ${open ? 'nav--open' : ''}`} aria-label="Primary">
           <ul className="nav__list">
             {navItems.map((item) => (
               <li
                 key={item.label}
-                className={`nav__item ${item.children ? 'nav__item--has-dropdown' : ''} ${item.active ? 'nav__item--active' : ''}`}
+                className={`nav__item ${item.children ? 'nav__item--has-dropdown' : ''}`}
               >
-                <a href={item.href} className="nav__link">
+                <NavLink
+                  to={item.to}
+                  className={({ isActive }) =>
+                    `nav__link ${isActive ? 'nav__link--active' : ''}`
+                  }
+                  end={item.to === '/'}
+                  onClick={closeMenu}
+                >
                   {item.label}
                   {item.children ? <IconChevron /> : null}
-                </a>
+                </NavLink>
                 {item.children ? (
                   <ul className="nav__dropdown">
                     {item.children.map((child) => (
-                      <li key={child}>
-                        <a href={item.href}>{child}</a>
+                      <li key={child.label}>
+                        <Link to={child.to} onClick={closeMenu}>
+                          {child.label}
+                        </Link>
                       </li>
                     ))}
                   </ul>
@@ -67,16 +93,20 @@ export default function Header() {
               </li>
             ))}
           </ul>
-          <a href="#donate" className="btn btn-primary header__donate header__donate--mobile">
+          <Link
+            to="/#donate"
+            className="btn btn-primary header__donate header__donate--mobile"
+            onClick={closeMenu}
+          >
             <IconHeart size={15} />
             Give / Donate
-          </a>
+          </Link>
         </nav>
 
-        <a href="#donate" className="btn btn-primary header__donate header__donate--desktop">
+        <Link to="/#donate" className="btn btn-primary header__donate header__donate--desktop">
           <IconHeart size={15} />
           Give / Donate
-        </a>
+        </Link>
 
         <button
           type="button"
