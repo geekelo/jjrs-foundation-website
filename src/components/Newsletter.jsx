@@ -14,7 +14,7 @@ export default function Newsletter() {
   }
 
   return (
-    <section className="newsletter" aria-labelledby="newsletter-heading">
+    <section className="newsletter" id="newsletter" aria-labelledby="newsletter-heading">
       <div className="container">
         <div className="newsletter__card">
           <div className="newsletter__intro">

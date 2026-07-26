@@ -3,6 +3,7 @@ import Layout from './layouts/Layout'
 import HomePage from './pages/HomePage'
 import GetInvolvedPage from './pages/GetInvolvedPage'
 import CareersPage from './pages/CareersPage'
+import SitemapPage from './pages/SitemapPage'
 import ScrollToTop from './components/ScrollToTop'
 import './App.css'
 
@@ -15,6 +16,7 @@ function App() {
           <Route index element={<HomePage />} />
           <Route path="get-involved" element={<GetInvolvedPage />} />
           <Route path="careers" element={<CareersPage />} />
+          <Route path="sitemap" element={<SitemapPage />} />
         </Route>
       </Routes>
     </BrowserRouter>

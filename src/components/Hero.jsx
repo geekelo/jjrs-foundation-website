@@ -56,8 +56,7 @@ export default function Hero() {
         <div className="hero__content">
           <p className="hero__eyebrow reveal">Welcome to JJRS Foundation</p>
           <h1 id="hero-heading" className="hero__title reveal reveal-delay-1">
-            We are driven to ensure that people fulfill their God-given purpose
-            by pulling unbelievers out of the pit of sin which is unbelief in
+            Pulling unbelievers out of the pit of sin which is unbelief in
             Jesus.
           </h1>
           <p className="hero__lead reveal reveal-delay-2">

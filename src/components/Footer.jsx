@@ -14,18 +14,18 @@ import './Footer.css'
 const quickLinks = [
   { label: 'About Us', to: '/get-involved#about-jjrsf' },
   { label: 'Events', to: '/#events' },
-  { label: 'Media', to: '/#media' },
   { label: 'Get Involved', to: '/get-involved' },
   { label: 'Give / Donate', to: '/#donate' },
   { label: 'Careers', to: '/careers' },
+  { label: 'Sitemap', to: '/sitemap' },
 ]
 
 const resources = [
-  { label: 'Blog', to: '/#resources' },
-  { label: 'Devotionals', to: '/#resources' },
+  { label: 'Blog', to: '/#library' },
+  { label: '360 Devotional', to: '/#devotion' },
   { label: 'Sermons', to: '/#media' },
-  { label: 'e-Library', to: '/#resources' },
-  { label: 'Christian Learning Academy', to: '/#resources' },
+  { label: 'JJRSF e-Library', to: '/#library' },
+  { label: 'Christian Learning Academy', to: '/#cla' },
 ]
 
 const socials = [
@@ -53,8 +53,9 @@ export default function Footer() {
             </span>
           </Link>
           <p>
-            Growing in grace, building lives, and impacting nations through
-            programs rooted in integrity, selflessness, and excellence.
+            We are driven to ensure that people fulfill their God-given purpose
+            by pulling unbelievers out of the pit of sin which is unbelief in
+            Jesus.
           </p>
           <ul className="footer__socials" aria-label="Social media">
             {socials.map(({ label, href, Icon }) => (

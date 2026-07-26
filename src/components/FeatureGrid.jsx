@@ -41,13 +41,13 @@ const images = {
 
 const cards = [
   {
-    id: 'about',
+    id: 'brochure',
     icon: IconInfo,
     title: 'JJRSF Brochure',
     description:
       'Discover our mission, vision, and the heart behind a foundation built on grace, faith, and love.',
     cta: 'Learn More',
-    href: '#about',
+    href: '#brochure',
     image: images.about,
   },
   {
@@ -63,7 +63,7 @@ const cards = [
   {
     id: 'media',
     icon: IconTv,
-    title: 'JJRS TV & Radio',
+    title: 'JJRSF TV & Radio',
     description:
       'Watch and listen to teachings, testimonies, and programs that inspire and equip believers.',
     cta: 'Watch Now',
@@ -73,11 +73,11 @@ const cards = [
   {
     id: 'library',
     icon: IconBook,
-    title: 'JJRS e-Library',
+    title: 'JJRSF e-Library',
     description:
       'Access devotionals, books, and learning resources curated for spiritual growth.',
     cta: 'Browse Library',
-    href: '#resources',
+    href: '#library',
     image: images.library,
   },
   {
@@ -87,7 +87,7 @@ const cards = [
     description:
       'Equip yourself through structured courses designed to deepen faith and leadership.',
     cta: 'Learn More',
-    href: '#resources',
+    href: '#cla',
     image: images.cla,
   },
   {
@@ -97,7 +97,7 @@ const cards = [
     description:
       'Grow daily with year-round devotionals that draw you closer to Christ and His truth.',
     cta: 'Read Today',
-    href: '#resources',
+    href: '#devotion',
     image: images.devotion,
   },
   {
@@ -107,7 +107,7 @@ const cards = [
     description:
       'Stay aligned with our daily and special prayer times as we seek God together.',
     cta: 'View Schedule',
-    href: '#pray',
+    href: '#prayer-schedule',
     image: images.prayer,
   },
   {
@@ -117,7 +117,7 @@ const cards = [
     description:
       'See moments of impact — worship, outreach, and lives transformed across the nations.',
     cta: 'Explore',
-    href: '#media',
+    href: '#album',
     collage: [images.album1, images.album2, images.album3, images.album4],
   },
   {
@@ -135,7 +135,7 @@ const cards = [
 
 export default function FeatureGrid() {
   return (
-    <section className="features" id="about" aria-labelledby="features-heading">
+    <section className="features" id="suite" aria-labelledby="features-heading">
       <div className="container">
         <h2 id="features-heading" className="features__title">
           The JJRSF Suite
@@ -143,18 +143,11 @@ export default function FeatureGrid() {
         <div className="features__grid">
           {cards.map((card) => {
             const Icon = card.icon
-            const sectionIds = {
-              events: 'events',
-              media: 'media',
-              library: 'resources',
-              donate: 'donate',
-              'prayer-schedule': 'prayer-schedule',
-            }
             return (
               <article
                 key={card.id}
                 className={`feature-card ${card.featured ? 'feature-card--featured' : ''}`}
-                id={sectionIds[card.id]}
+                id={card.id}
               >
                 <div className="feature-card__icon" aria-hidden="true">
                   <Icon size={18} />

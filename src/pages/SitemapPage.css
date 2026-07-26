@@ -1,0 +1,114 @@
+.sitemap__hero {
+  background:
+    radial-gradient(ellipse 70% 80% at 10% 20%, rgba(91, 58, 158, 0.14), transparent 55%),
+    radial-gradient(ellipse 60% 50% at 90% 0%, rgba(123, 91, 196, 0.1), transparent 50%),
+    linear-gradient(180deg, var(--lavender) 0%, var(--white) 100%);
+  padding: 3.25rem 0 2.5rem;
+}
+
+.sitemap__hero-inner {
+  max-width: 40rem;
+}
+
+.sitemap__eyebrow {
+  display: inline-block;
+  margin-bottom: 0.85rem;
+  padding: 0.35rem 0.75rem;
+  border-radius: 999px;
+  background: var(--purple-100);
+  color: var(--purple-900);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.sitemap__hero h1 {
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  letter-spacing: -0.03em;
+  color: var(--purple-900);
+  margin-bottom: 0.85rem;
+}
+
+.sitemap__hero p {
+  line-height: 1.7;
+  color: var(--text);
+}
+
+.sitemap__section {
+  padding: 2.5rem 0 3.5rem;
+  background: linear-gradient(180deg, var(--white) 0%, var(--lavender) 100%);
+}
+
+.sitemap__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.15rem;
+}
+
+.sitemap-card {
+  background: var(--white);
+  border: 1px solid rgba(61, 33, 124, 0.06);
+  border-radius: var(--radius-lg);
+  padding: 1.25rem 1.3rem;
+  box-shadow: var(--shadow-soft);
+}
+
+.sitemap-card h2 {
+  font-size: 1.05rem;
+  color: var(--purple-900);
+  margin-bottom: 0.85rem;
+  padding-bottom: 0.65rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.sitemap-card ul {
+  display: grid;
+  gap: 0.15rem;
+}
+
+.sitemap-card a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding: 0.55rem 0.35rem;
+  border-radius: var(--radius-sm);
+  color: var(--text-dark);
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition:
+    background 0.2s ease,
+    color 0.2s ease,
+    padding-left 0.2s ease;
+}
+
+.sitemap-card a svg {
+  color: var(--purple-700);
+  opacity: 0.55;
+  flex-shrink: 0;
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease;
+}
+
+.sitemap-card a:hover {
+  background: var(--purple-50);
+  color: var(--purple-900);
+  padding-left: 0.55rem;
+}
+
+.sitemap-card a:hover svg {
+  opacity: 1;
+  transform: translateX(2px);
+}
+
+@media (max-width: 640px) {
+  .sitemap__hero {
+    padding: 2.25rem 0 2rem;
+  }
+
+  .sitemap__section {
+    padding: 2rem 0 2.75rem;
+  }
+}

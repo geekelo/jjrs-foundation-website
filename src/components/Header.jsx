@@ -4,37 +4,28 @@ import logo from '../assets/logo.png'
 import { IconHeart, IconChevron, IconMenu, IconClose } from './Icons'
 import './Header.css'
 
-const navItems = [
-  { label: 'Home', to: '/' },
-  { label: 'About', to: '/get-involved#about-jjrsf' },
+const suiteItems = [
+  { label: 'JJRSF Brochure', to: '/#brochure' },
   { label: 'Events', to: '/#events' },
+  { label: 'JJRSF TV & Radio', to: '/#media' },
+  { label: 'JJRSF e-Library', to: '/#library' },
+  { label: 'CLA (Christian Learning Academy)', to: '/#cla' },
+  { label: '360 Devotional', to: '/#devotion' },
+  { label: 'Prayer Schedule', to: '/#prayer-schedule' },
+  { label: 'JJRS Photo Album', to: '/#album' },
+]
+
+const navItems = [
+  { label: 'About', to: '/get-involved#about-jjrsf' },
+  { label: 'Sitemap', to: '/sitemap' },
+  { label: 'Team', to: '/careers' },
   {
-    label: 'Media',
-    to: '/#media',
-    children: [
-      { label: 'JJRS TV & Radio', to: '/#media' },
-      { label: 'Photo Album', to: '/#media' },
-      { label: 'Sermons', to: '/#media' },
-    ],
+    label: 'Suite',
+    to: '/#suite',
+    children: suiteItems,
   },
-  {
-    label: 'Resources',
-    to: '/#resources',
-    children: [
-      { label: 'e-Library', to: '/#resources' },
-      { label: 'Blog', to: '/#resources' },
-      { label: 'Devotionals', to: '/#resources' },
-    ],
-  },
-  {
-    label: 'Get Involved',
-    to: '/get-involved',
-    children: [
-      { label: 'Initiatives', to: '/get-involved#initiatives-heading' },
-      { label: 'Social Outlets', to: '/get-involved#connect' },
-      { label: 'Careers', to: '/careers' },
-    ],
-  },
+  { label: 'Initiatives', to: '/get-involved#initiatives-heading' },
+  { label: 'Testimonies', to: '/#testimonies' },
 ]
 
 export default function Header() {
@@ -73,8 +64,7 @@ export default function Header() {
                   className={({ isActive }) =>
                     `nav__link ${isActive ? 'nav__link--active' : ''}`
                   }
-                  end={item.to === '/'}
-                  onClick={closeMenu}
+                  onClick={item.children ? undefined : closeMenu}
                 >
                   {item.label}
                   {item.children ? <IconChevron /> : null}

@@ -14,10 +14,10 @@ import {
   IconBriefcase,
 } from '../components/Icons'
 import GetInvolvedIcon from '../components/GetInvolvedIcon'
-import aboutImg1 from '../assets/hero/slide-2.jpg'
-import aboutImg2 from '../assets/hero/slide-5.jpg'
-import aboutImg3 from '../assets/hero/slide-1.jpg'
-import aboutImg4 from '../assets/hero/slide-3.jpg'
+import aboutImg1 from '../assets/involved/about-1.jpg'
+import aboutImg2 from '../assets/involved/about-2.jpg'
+import aboutImg3 from '../assets/involved/about-3.jpg'
+import aboutImg4 from '../assets/involved/about-4.jpg'
 import './GetInvolvedPage.css'
 
 const supportAims = [
@@ -106,7 +106,7 @@ export default function GetInvolvedPage() {
               ))}
             </ul>
             <p>
-              We are driven to ensure that people fulfill their God-given purpose
+              We are driven to ensure that people fulill their God-given purpose
               by pulling unbelievers out of the pit of sin which is unbelief in
               Jesus.
             </p>
@@ -136,53 +136,53 @@ export default function GetInvolvedPage() {
             <figure className="involved__photo involved__photo--main">
               <img
                 src={aboutImg1}
-                alt="Women listening attentively during a JJRS gathering"
+                alt="A woman in prayer during a JJRS gathering"
                 loading="lazy"
               />
             </figure>
             <figure className="involved__photo">
               <img
                 src={aboutImg2}
-                alt="Congregation seated during a foundation meeting"
+                alt="A worship leader singing on stage"
                 loading="lazy"
               />
             </figure>
             <figure className="involved__photo">
               <img
                 src={aboutImg3}
-                alt="Young people worshipping with hands raised"
+                alt="A woman lifting her hands in worship"
                 loading="lazy"
               />
             </figure>
-            <figure className="involved__photo involved__photo--wide">
-              <img
-                src={aboutImg4}
-                alt="Speaker sharing from the stage at a JJRS event"
-                loading="lazy"
-              />
-            </figure>
+
           </div>
         </div>
       </section>
 
-      <section className="involved__section involved__section--soft" aria-labelledby="brief-history">
-        <div className="container involved__copy">
-          <h2 id="brief-history">Brief History</h2>
-          <p>
-            JJRS Foundation was inspired in 2001 by Romans 12:8 (NLT); if your
-            gift is to encourage others, be encouraging. If it is giving, give
-            generously. If God has given you leadership ability, take the
-            responsibility seriously. And if you have a gift for showing kindness
-            to others, do it gladly. It started in 2004 at Kano as a platform to
-            assist people with meeting their basic needs.
-          </p>
-          <p>
-            This however continued till 2007 when it began to sponsor some
-            financially challenged youth to school in Makurdi, Benue State of
-            Nigeria, five (5) of whom have graduated with BSc degrees and by
-            God’s divine provision, others are still studying in various primary,
-            secondary and tertiary institutions across the country.
-          </p>
+      <section
+        className="involved__section involved__history"
+        aria-labelledby="brief-history"
+        style={{ '--history-bg': `url(${aboutImg4})` }}
+      >
+        <div className="involved__history-overlay">
+          <div className="container involved__copy involved__history-copy">
+            <h2 id="brief-history">Brief History</h2>
+            <p>
+              JJRS Foundation was inspired in 2001 by Romans 12:8 (NLT); if your
+              gift is to encourage others, be encouraging. If it is giving, give
+              generously. If God has given you leadership ability, take the
+              responsibility seriously. And if you have a gift for showing kindness
+              to others, do it gladly. It started in 2004 at Kano as a platform to
+              assist people with meeting their basic needs.
+            </p>
+            <p>
+              This however continued till 2007 when it began to sponsor some
+              financially challenged youth to school in Makurdi, Benue State of
+              Nigeria, five (5) of whom have graduated with BSc degrees and by
+              God’s divine provision, others are still studying in various primary,
+              secondary and tertiary institutions across the country.
+            </p>
+          </div>
         </div>
       </section>
 

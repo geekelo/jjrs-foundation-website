@@ -97,7 +97,9 @@
   top: calc(100% + 0.65rem);
   left: 50%;
   transform: translateX(-50%) translateY(6px);
-  min-width: 11.5rem;
+  min-width: 15.5rem;
+  max-height: min(70vh, 28rem);
+  overflow-y: auto;
   padding: 0.45rem;
   background: var(--white);
   border: 1px solid var(--border);
