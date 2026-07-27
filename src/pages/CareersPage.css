@@ -6,7 +6,28 @@
 }
 
 .careers__hero-inner {
-  max-width: 40rem;
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 2rem 2.5rem;
+  align-items: center;
+  max-width: none;
+}
+
+.careers__hero-icon {
+  width: clamp(140px, 18vw, 200px);
+  flex-shrink: 0;
+  animation: soft-float 7s ease-in-out infinite;
+}
+
+.careers__hero-icon svg {
+  width: 100%;
+  height: auto;
+  display: block;
+  filter: drop-shadow(0 12px 28px rgba(61, 33, 124, 0.14));
+}
+
+.careers__hero-copy {
+  max-width: 36rem;
 }
 
 .careers__eyebrow {
@@ -96,4 +117,16 @@
   color: var(--purple-900);
   font-weight: 600;
   text-decoration: underline;
+}
+
+@media (max-width: 640px) {
+  .careers__hero-inner {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+    justify-items: start;
+  }
+
+  .careers__hero-icon {
+    width: 120px;
+  }
 }

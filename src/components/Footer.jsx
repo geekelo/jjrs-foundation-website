@@ -1,39 +1,15 @@
 import { Link } from 'react-router-dom'
 import logo from '../assets/logo.png'
+import { IconMapPin, IconPhone, IconMail, IconLink } from './Icons'
 import {
-  IconFacebook,
-  IconYoutube,
-  IconInstagram,
-  IconMail,
-  IconMapPin,
-  IconPhone,
-  IconLink,
-} from './Icons'
+  footerQuickLinks,
+  footerResources,
+  footerBrand,
+  contactInfo,
+} from '../data/navigation'
+import { socialLinks } from '../data/socials'
+import { icons } from '../data/icons'
 import './Footer.css'
-
-const quickLinks = [
-  { label: 'About Us', to: '/get-involved#about-jjrsf' },
-  { label: 'Events', to: '/#events' },
-  { label: 'Get Involved', to: '/get-involved' },
-  { label: 'Give / Donate', to: '/#donate' },
-  { label: 'Careers', to: '/careers' },
-  { label: 'Sitemap', to: '/sitemap' },
-]
-
-const resources = [
-  { label: 'Blog', to: '/#library' },
-  { label: '360 Devotional', to: '/#devotion' },
-  { label: 'Sermons', to: '/#media' },
-  { label: 'JJRSF e-Library', to: '/#library' },
-  { label: 'Christian Learning Academy', to: '/#cla' },
-]
-
-const socials = [
-  { label: 'Facebook', href: '#', Icon: IconFacebook },
-  { label: 'YouTube', href: '#', Icon: IconYoutube },
-  { label: 'Instagram', href: '#', Icon: IconInstagram },
-  { label: 'Email', href: 'mailto:info@jjrsfoundation.org', Icon: IconMail },
-]
 
 export default function Footer() {
   return (
@@ -48,30 +24,29 @@ export default function Footer() {
               height="52"
             />
             <span>
-              <strong>JJRS Foundation</strong>
-              <small>Prayer. Love. Partner.</small>
+              <strong>{footerBrand.name}</strong>
+              <small>{footerBrand.tagline}</small>
             </span>
           </Link>
-          <p>
-            We are driven to ensure that people fulfill their God-given purpose
-            by pulling unbelievers out of the pit of sin which is unbelief in
-            Jesus.
-          </p>
+          <p>{footerBrand.blurb}</p>
           <ul className="footer__socials" aria-label="Social media">
-            {socials.map(({ label, href, Icon }) => (
-              <li key={label}>
-                <a href={href} aria-label={label}>
-                  <Icon size={15} />
-                </a>
-              </li>
-            ))}
+            {socialLinks.map(({ label, href, icon }) => {
+              const Icon = icons[icon]
+              return (
+                <li key={label}>
+                  <a href={href} aria-label={label}>
+                    <Icon size={15} />
+                  </a>
+                </li>
+              )
+            })}
           </ul>
         </div>
 
         <div>
           <h3>Quick Links</h3>
           <ul className="footer__links">
-            {quickLinks.map((link) => (
+            {footerQuickLinks.map((link) => (
               <li key={link.label}>
                 <Link to={link.to}>{link.label}</Link>
               </li>
@@ -82,7 +57,7 @@ export default function Footer() {
         <div>
           <h3>Resources</h3>
           <ul className="footer__links">
-            {resources.map((link) => (
+            {footerResources.map((link) => (
               <li key={link.label}>
                 <Link to={link.to}>{link.label}</Link>
               </li>
@@ -95,19 +70,19 @@ export default function Footer() {
           <ul className="footer__contact">
             <li>
               <IconMapPin size={16} />
-              <span>Lagos, Nigeria</span>
+              <span>{contactInfo.address}</span>
             </li>
             <li>
               <IconPhone size={16} />
-              <a href="tel:+2348000000000">+234 800 000 0000</a>
+              <a href={contactInfo.phoneHref}>{contactInfo.phone}</a>
             </li>
             <li>
               <IconMail size={16} />
-              <a href="mailto:info@jjrsfoundation.org">info@jjrsfoundation.org</a>
+              <a href={contactInfo.emailHref}>{contactInfo.email}</a>
             </li>
             <li>
               <IconLink size={16} />
-              <a href="#">www.jjrsfoundation.org</a>
+              <a href="#">{contactInfo.website}</a>
             </li>
           </ul>
         </div>
@@ -115,7 +90,7 @@ export default function Footer() {
 
       <div className="footer__bottom">
         <div className="container footer__bottom-inner">
-          <p>© {new Date().getFullYear()} JJRS Foundation. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} {footerBrand.name}. All rights reserved.</p>
           <p>
             <a href="#privacy">Privacy Policy</a>
             <span aria-hidden="true"> | </span>

@@ -1,37 +1,8 @@
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { IconUsers, IconHeart } from './Icons'
-import slide1 from '../assets/hero/slide-1.jpg'
-import slide2 from '../assets/hero/slide-2.jpg'
-import slide3 from '../assets/hero/slide-3.jpg'
-import slide4 from '../assets/hero/slide-4.jpg'
-import slide5 from '../assets/hero/slide-5.jpg'
+import { heroSlides, HERO_SLIDE_INTERVAL_MS, heroCopy } from '../data/hero'
 import './Hero.css'
-
-const slides = [
-  {
-    src: slide1,
-    alt: 'Young worshippers lifting their hands in praise',
-  },
-  {
-    src: slide2,
-    alt: 'Women listening attentively during a foundation gathering',
-  },
-  {
-    src: slide3,
-    alt: 'Speaker sharing from the stage at a JJRS event',
-  },
-  {
-    src: slide4,
-    alt: 'Graduates and partners gathered on stage for a group photo',
-  },
-  {
-    src: slide5,
-    alt: 'Congregation seated attentively during a JJRS Foundation gathering',
-  },
-]
-
-const INTERVAL_MS = 5000
 
 export default function Hero() {
   const [active, setActive] = useState(0)
@@ -41,8 +12,8 @@ export default function Hero() {
     if (reduceMotion) return undefined
 
     const id = window.setInterval(() => {
-      setActive((current) => (current + 1) % slides.length)
-    }, INTERVAL_MS)
+      setActive((current) => (current + 1) % heroSlides.length)
+    }, HERO_SLIDE_INTERVAL_MS)
 
     return () => window.clearInterval(id)
   }, [active])
@@ -54,16 +25,11 @@ export default function Hero() {
 
       <div className="container hero__grid">
         <div className="hero__content">
-          <p className="hero__eyebrow reveal">Welcome to JJRS Foundation</p>
+          <p className="hero__eyebrow reveal">{heroCopy.eyebrow}</p>
           <h1 id="hero-heading" className="hero__title reveal reveal-delay-1">
-            Pulling unbelievers out of the pit of sin which is unbelief in
-            Jesus.
+            {heroCopy.title}
           </h1>
-          <p className="hero__lead reveal reveal-delay-2">
-            We aim at lifting believers out of the pit of religion and self
-            effort in order for all to be saved and come to the knowledge of the
-            truth.
-          </p>
+          <p className="hero__lead reveal reveal-delay-2">{heroCopy.lead}</p>
           <div className="hero__actions reveal reveal-delay-3">
             <Link to="/get-involved" className="btn btn-primary">
               <IconUsers size={16} />
@@ -75,11 +41,8 @@ export default function Hero() {
             </a>
           </div>
           <blockquote className="hero__quote reveal reveal-delay-4">
-            <p>
-              “Rescue those being led away to death; hold back those staggering
-              toward slaughter.”
-            </p>
-            <cite>— Proverbs 24:11</cite>
+            <p>{heroCopy.quote}</p>
+            <cite>{heroCopy.citation}</cite>
           </blockquote>
         </div>
 
@@ -89,7 +52,7 @@ export default function Hero() {
             aria-roledescription="carousel"
             aria-label="JJRS Foundation moments"
           >
-            {slides.map((slide, index) => (
+            {heroSlides.map((slide, index) => (
               <img
                 key={slide.src}
                 src={slide.src}
@@ -103,7 +66,7 @@ export default function Hero() {
             ))}
 
             <div className="hero__dots" role="tablist" aria-label="Slide controls">
-              {slides.map((slide, index) => (
+              {heroSlides.map((slide, index) => (
                 <button
                   key={slide.src}
                   type="button"
