@@ -12,7 +12,7 @@ export const suiteItems = [
 export const navItems = [
   { label: 'About', to: '/get-involved#about-jjrsf' },
   { label: 'Sitemap', to: '/sitemap' },
-  { label: 'Team', to: '/careers' },
+  { label: 'Team', to: '/team' },
   {
     label: 'Suite',
     to: '/#suite',
@@ -27,6 +27,7 @@ export const footerQuickLinks = [
   { label: 'Events', to: '/#events' },
   { label: 'Get Involved', to: '/get-involved' },
   { label: 'Give / Donate', to: '/#donate' },
+  { label: 'Team', to: '/team' },
   { label: 'Careers', to: '/careers' },
   { label: 'Sitemap', to: '/sitemap' },
 ]
