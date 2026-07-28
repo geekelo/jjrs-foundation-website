@@ -26,18 +26,20 @@ export const footerQuickLinks = [
   { label: 'About Us', to: '/get-involved#about-jjrsf' },
   { label: 'Events', to: '/#events' },
   { label: 'Get Involved', to: '/get-involved' },
-  { label: 'JJRSF Lay-Up Treasure', to: 'https://layuptreasure.jjrsf.org/' },
+  { label: 'JJRSF Calendar', to: '/calendar' },
   { label: 'Team', to: '/team' },
   { label: 'Careers', to: '/careers' },
   { label: 'Sitemap', to: '/sitemap' },
 ]
 
 export const footerResources = [
-  { label: 'Blog', to: '/#library' },
+  { label: 'JJRSF Journal', to: '/journal' },
   { label: '360 Devotional', to: 'https://tinyurl.com/360devotional' },
-  { label: 'Sermons', to: 'https://tv.jjrsf.org/' },
+  { label: 'JJRSF TV', to: 'https://tv.jjrsf.org/' },
   { label: 'JJRSF e-Library', to: 'https://library.jjrsf.org/' },
   { label: 'Christian Learning Academy', to: '/#cla' },
+  { label: 'JJRSF Lay-Up Treasure', to: 'https://layuptreasure.jjrsf.org/' },
+  { label: 'Prayer Studio', to: 'https://tinyurl.com/jjrsfstudio' },
 ]
 
 export const footerBrand = {

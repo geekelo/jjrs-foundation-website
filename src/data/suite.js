@@ -96,7 +96,7 @@ export const suiteCards = [
     description:
       'Your generosity fuels outreach, education, and hope for families around the world.',
     cta: 'Give Now',
-    href: 'https://layuptreasure.jjrsf.org/',
+    href: '/give',
     imageKey: 'donate',
     featured: true,
   },
