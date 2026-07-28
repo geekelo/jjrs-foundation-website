@@ -6,7 +6,7 @@ export const currentTeamMembers = [
       'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&q=80',
     linkedinUrl: 'https://www.linkedin.com/',
     contactFormUrl:
-      'mailto:info@jjrsfoundation.org?subject=Message%20for%20Ada%20Okoro',
+      'mailto:jjrsfoundation@gmail.com?subject=Message%20for%20Ada%20Okoro',
     currentPositions: [
       {
         title: 'Executive Director',
@@ -46,7 +46,7 @@ export const currentTeamMembers = [
       'https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=600&q=80',
     linkedinUrl: 'https://www.linkedin.com/',
     contactFormUrl:
-      'mailto:info@jjrsfoundation.org?subject=Message%20for%20Chidi%20Nwosu',
+      'mailto:jjrsfoundation@gmail.com?subject=Message%20for%20Chidi%20Nwosu',
     currentPositions: [
       {
         title: 'Director of Media & Communications',
@@ -76,7 +76,7 @@ export const currentTeamMembers = [
       'https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=600&q=80',
     linkedinUrl: 'https://www.linkedin.com/',
     contactFormUrl:
-      'mailto:info@jjrsfoundation.org?subject=Message%20for%20Funke%20Adebayo',
+      'mailto:jjrsfoundation@gmail.com?subject=Message%20for%20Funke%20Adebayo',
     currentPositions: [
       {
         title: 'Head of Education Support',
@@ -115,7 +115,7 @@ export const currentTeamMembers = [
       'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=600&q=80',
     linkedinUrl: 'https://www.linkedin.com/',
     contactFormUrl:
-      'mailto:info@jjrsfoundation.org?subject=Message%20for%20Emeka%20Ibekwe',
+      'mailto:jjrsfoundation@gmail.com?subject=Message%20for%20Emeka%20Ibekwe',
     currentPositions: [
       {
         title: 'Operations & Logistics Lead',
@@ -154,7 +154,7 @@ export const previousTeamMembers = [
       'https://images.unsplash.com/photo-1598550874175-4d02f6230b8a?auto=format&fit=crop&w=600&q=80',
     linkedinUrl: 'https://www.linkedin.com/',
     contactFormUrl:
-      'mailto:info@jjrsfoundation.org?subject=Message%20for%20Ngozi%20Eze',
+      'mailto:jjrsfoundation@gmail.com?subject=Message%20for%20Ngozi%20Eze',
     previousPositions: [
       {
         title: 'Board Secretary',
@@ -183,7 +183,7 @@ export const previousTeamMembers = [
       'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=600&q=80',
     linkedinUrl: 'https://www.linkedin.com/',
     contactFormUrl:
-      'mailto:info@jjrsfoundation.org?subject=Message%20for%20Tunde%20Balogun',
+      'mailto:jjrsfoundation@gmail.com?subject=Message%20for%20Tunde%20Balogun',
     previousPositions: [
       {
         title: 'Director of Partnerships',
@@ -216,7 +216,7 @@ export const previousTeamMembers = [
       'https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=600&q=80',
     linkedinUrl: 'https://www.linkedin.com/',
     contactFormUrl:
-      'mailto:info@jjrsfoundation.org?subject=Message%20for%20Amina%20Yusuf',
+      'mailto:jjrsfoundation@gmail.com?subject=Message%20for%20Amina%20Yusuf',
     previousPositions: [
       {
         title: 'Healing Support Coordinator',

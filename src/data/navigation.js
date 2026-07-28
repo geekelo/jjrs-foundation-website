@@ -53,7 +53,7 @@ export const contactInfo = {
   address: 'Lagos, Nigeria',
   phone: '+234 800 000 0000',
   phoneHref: 'tel:+2348000000000',
-  email: 'info@jjrsfoundation.org',
-  emailHref: 'mailto:info@jjrsfoundation.org',
+  email: 'jjrsfoundation@gmail.com',
+  emailHref: 'mailto:jjrsfoundation@gmail.com',
   website: 'www.jjrsfoundation.org',
 }

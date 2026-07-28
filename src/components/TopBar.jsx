@@ -23,11 +23,17 @@ export default function TopBar() {
           {socialLinks.map(({ label, href, icon }) => {
             const Icon = icons[icon]
             return (
-              <li key={label}>
-                <a href={href} aria-label={label}>
-                  <Icon size={15} />
-                </a>
-              </li>
+                <li key={label}>
+                  <a
+                    href={href}
+                    aria-label={label}
+                    {...(href.startsWith('http')
+                      ? { target: '_blank', rel: 'noreferrer' }
+                      : {})}
+                  >
+                    <Icon size={15} />
+                  </a>
+                </li>
             )
           })}
         </ul>

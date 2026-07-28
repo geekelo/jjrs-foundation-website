@@ -34,7 +34,13 @@ export default function Footer() {
               const Icon = icons[icon]
               return (
                 <li key={label}>
-                  <a href={href} aria-label={label}>
+                  <a
+                    href={href}
+                    aria-label={label}
+                    {...(href.startsWith('http')
+                      ? { target: '_blank', rel: 'noreferrer' }
+                      : {})}
+                  >
                     <Icon size={15} />
                   </a>
                 </li>

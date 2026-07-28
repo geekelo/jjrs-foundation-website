@@ -1,8 +1,9 @@
 export const socialLinks = [
-  { label: 'Facebook', href: '#', icon: 'facebook' },
-  { label: 'YouTube', href: '#', icon: 'youtube' },
-  { label: 'Instagram', href: '#', icon: 'instagram' },
-  { label: 'Email', href: 'mailto:info@jjrsfoundation.org', icon: 'mail' },
+  { label: 'Facebook', href: 'https://www.facebook.com/jjrsfoundation', icon: 'facebook' },
+  { label: 'YouTube', href: 'https://www.youtube.com/@jjrsf', icon: 'youtube' },
+  { label: 'Instagram', href: 'https://www.instagram.com/jesusjirehrapha/', icon: 'instagram' },
+  { label: 'TikTok', href: 'https://www.tiktok.com/@the_jesusradio', icon: 'tiktok' },
+  { label: 'Email', href: 'mailto:jjrsfoundation@gmail.com', icon: 'mail' },
 ]
 
 export const prayerInfo = {

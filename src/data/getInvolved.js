@@ -33,12 +33,16 @@ export const initiatives = [
 ]
 
 export const socialOutlets = [
-  { label: 'WhatsApp', href: '#', icon: 'whatsapp' },
-  { label: 'Instagram', href: '#', icon: 'instagram' },
-  { label: 'Facebook', href: '#', icon: 'facebook' },
-  { label: 'TikTok', href: '#', icon: 'tiktok' },
-  { label: 'Telegram', href: '#', icon: 'telegram' },
-  { label: 'Email List', href: 'mailto:info@jjrsfoundation.org', icon: 'mail' },
+  {
+    label: 'WhatsApp',
+    href: "https://wa.me/2349068491313?text=Hi%2C%20I%27ll%20like%20to%20know%20the%20next%20big%20thing%20happening%20on%20JJRSF",
+    icon: 'whatsapp',
+  },
+  { label: 'Instagram', href: 'https://www.instagram.com/jesusjirehrapha/', icon: 'instagram' },
+  { label: 'Facebook', href: 'https://www.facebook.com/jjrsfoundation', icon: 'facebook' },
+  { label: 'TikTok', href: 'https://www.tiktok.com/@the_jesusradio', icon: 'tiktok' },
+  { label: 'YouTube', href: 'https://www.youtube.com/@jjrsf', icon: 'youtube' },
+  { label: 'Email', href: 'mailto:jjrsfoundation@gmail.com', icon: 'mail' },
 ]
 
 export const departmentNames = [

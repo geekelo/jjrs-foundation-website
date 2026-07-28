@@ -60,7 +60,7 @@ export const sitemapSections = [
       { label: 'Chat on WhatsApp', to: 'https://wa.me/2349068491313?text=Hi%2C%20I%27ll%20like%20to%20know%20the%20next%20big%20thing%20happening%20on%20JJRSF', external: true },
       { label: 'GIVE/PARTNER', to: '/give' },
       { label: 'Open Lay-Up Treasure Portal', to: 'https://layuptreasure.jjrsf.org/', external: true },
-      { label: 'Contact Email', to: 'mailto:info@jjrsfoundation.org', external: true },
+      { label: 'Contact Email', to: 'mailto:jjrsfoundation@gmail.com', external: true },
     ],
   },
 ]
