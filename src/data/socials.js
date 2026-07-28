@@ -7,6 +7,6 @@ export const socialLinks = [
 
 export const prayerInfo = {
   timeLabel: 'Prayer Time: 2:30 – 3:00 pm GMT+1',
-  joinLabel: 'Join Us to Pray',
-  href: '#pray',
+  joinLabel: 'Connect to Studio',
+  href: 'https://tinyurl.com/jjrsfstudio',
 }

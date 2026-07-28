@@ -35,9 +35,14 @@ export default function Hero() {
               <IconUsers size={16} />
               Get Involved
             </Link>
-            <a href="#donate" className="btn btn-outline">
+            <a
+              href="https://layuptreasure.jjrsf.org/"
+              className="btn btn-outline"
+              target="_blank"
+              rel="noreferrer"
+            >
               <IconHeart size={15} />
-              Give / Donate
+              JJRSF Lay-Up Treasure
             </a>
           </div>
           <blockquote className="hero__quote reveal reveal-delay-4">

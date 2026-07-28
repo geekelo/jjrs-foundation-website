@@ -4,6 +4,9 @@ import tvCardImg from '../assets/tv-card.jpg'
 import libraryCardImg from '../assets/library-card.jpg'
 import claCardImg from '../assets/cla-card.jpg'
 import devotionCardImg from '../assets/devotion-card.jpg'
+import calendarCardImg from '../assets/calendar-card.jpg'
+import albumCardImg from '../assets/album-card.jpg'
+import donateCardImg from '../assets/donate-card.jpg'
 
 export const suiteCards = [
   {
@@ -49,7 +52,7 @@ export const suiteCards = [
   {
     id: 'cla',
     icon: 'grad',
-    title: 'CLA (Christian Learning Academy)',
+    title: 'JJRSF CLA (Christian Learning Academy)',
     description:
       'Equip yourself through structured courses designed to deepen faith and leadership.',
     cta: 'Learn More',
@@ -67,33 +70,33 @@ export const suiteCards = [
     imageKey: 'devotion',
   },
   {
-    id: 'prayer-schedule',
-    icon: 'pray',
-    title: 'Prayer Schedule',
+    id: 'calendar',
+    icon: 'calendar',
+    title: 'JJRSF Calendar',
     description:
-      'Stay aligned with our daily and special prayer times as we seek God together.',
-    cta: 'View Schedule',
-    href: '#prayer-schedule',
-    imageKey: 'prayer',
+      'View prayer schedules and other upcoming schedules across the foundation.',
+    cta: 'View Calendar',
+    href: '/calendar',
+    imageKey: 'calendar',
   },
   {
     id: 'album',
     icon: 'camera',
-    title: 'JJRS Photo Album',
+    title: 'JJRSF Photo Album',
     description:
       'See moments of impact — worship, outreach, and lives transformed across the nations.',
     cta: 'Explore',
-    href: '#album',
-    collageKeys: ['album1', 'album2', 'album3', 'album4'],
+    href: 'https://photos.app.goo.gl/9ytSdyqgevSSbqD48',
+    imageKey: 'album',
   },
   {
     id: 'donate',
     icon: 'heart',
-    title: 'Give / Donate',
+    title: 'JJRSF Lay-Up Treasure',
     description:
       'Your generosity fuels outreach, education, and hope for families around the world.',
     cta: 'Give Now',
-    href: '#donate',
+    href: 'https://layuptreasure.jjrsf.org/',
     imageKey: 'donate',
     featured: true,
   },
@@ -105,21 +108,12 @@ export const suiteImages = {
     'https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?auto=format&fit=crop&w=600&q=80',
   events: eventsCardImg,
   tv: tvCardImg,
-  album1:
-    'https://images.unsplash.com/photo-1511632765486-a01980e01a18?auto=format&fit=crop&w=300&q=80',
-  album2:
-    'https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?auto=format&fit=crop&w=300&q=80',
-  album3:
-    'https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=300&q=80',
-  album4:
-    'https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=300&q=80',
+  album: albumCardImg,
   library: libraryCardImg,
   cla: claCardImg,
   devotion: devotionCardImg,
-  prayer:
-    'https://images.unsplash.com/photo-1438232998663-adf9c73b0b9b?auto=format&fit=crop&w=600&q=80',
-  donate:
-    'https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?auto=format&fit=crop&w=600&q=80',
+  calendar: calendarCardImg,
+  donate: donateCardImg,
 }
 
 export const suiteJoinCta = {

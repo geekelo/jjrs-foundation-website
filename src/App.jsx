@@ -5,6 +5,7 @@ import GetInvolvedPage from './pages/GetInvolvedPage'
 import CareersPage from './pages/CareersPage'
 import TeamPage from './pages/TeamPage'
 import JournalPage from './pages/JournalPage'
+import CalendarPage from './pages/CalendarPage'
 import SitemapPage from './pages/SitemapPage'
 import ScrollToTop from './components/ScrollToTop'
 import './App.css'
@@ -20,6 +21,7 @@ function App() {
           <Route path="team" element={<TeamPage />} />
           <Route path="careers" element={<CareersPage />} />
           <Route path="journal" element={<JournalPage />} />
+          <Route path="calendar" element={<CalendarPage />} />
           <Route path="sitemap" element={<SitemapPage />} />
         </Route>
       </Routes>

@@ -19,8 +19,13 @@ export default function PrayerBanner() {
             Join believers around the world each day as we seek God together in
             unity, faith, and love.
           </p>
-          <a href="#pray" className="btn btn-primary prayer__cta">
-            Join Us to Pray
+          <a
+            href="https://tinyurl.com/jjrsfstudio"
+            className="btn btn-primary prayer__cta"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Connect to Studio
           </a>
         </div>
       </div>

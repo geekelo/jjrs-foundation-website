@@ -9,7 +9,12 @@ export default function TopBar() {
       <div className="container topbar__inner">
         <p className="topbar__prayer">
           <span>{prayerInfo.timeLabel}</span>
-          <a href={prayerInfo.href} className="topbar__join">
+          <a
+            href={prayerInfo.href}
+            className="topbar__join"
+            target="_blank"
+            rel="noreferrer"
+          >
             <IconPray size={14} />
             {prayerInfo.joinLabel}
           </a>

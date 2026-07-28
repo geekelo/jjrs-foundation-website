@@ -71,20 +71,27 @@ export default function Header() {
               </li>
             ))}
           </ul>
-          <Link
-            to="/#donate"
+          <a
+            href="https://layuptreasure.jjrsf.org/"
             className="btn btn-primary header__donate header__donate--mobile"
+            target="_blank"
+            rel="noreferrer"
             onClick={closeMenu}
           >
             <IconHeart size={15} />
-            Give / Donate
-          </Link>
+            JJRSF Lay-Up Treasure
+          </a>
         </nav>
 
-        <Link to="/#donate" className="btn btn-primary header__donate header__donate--desktop">
+        <a
+          href="https://layuptreasure.jjrsf.org/"
+          className="btn btn-primary header__donate header__donate--desktop"
+          target="_blank"
+          rel="noreferrer"
+        >
           <IconHeart size={15} />
-          Give / Donate
-        </Link>
+          JJRSF Lay-Up Treasure
+        </a>
 
         <button
           type="button"

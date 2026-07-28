@@ -88,6 +88,25 @@ export function IconCalendar({ size = 18 }) {
   )
 }
 
+export function IconCalendarPlus({ size = 18 }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
+      <rect x="3" y="5" width="14" height="15" rx="2" />
+      <path d="M3 10h14M8 3v4M14 3v4" />
+      <path d="M19 14v6M16 17h6" strokeLinecap="round" />
+    </svg>
+  )
+}
+
+export function IconClick({ size = 18 }) {
+  return (
+    <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
+      <path d="M9 9l-4.5 11.5 3.2-1.2 2.1 3.5 1.8-1.1-2.1-3.5L14 16.5 9 9z" strokeLinejoin="round" />
+      <path d="M12 4.5V3M16.5 6l1.2-1.2M18.5 11H20M16.5 16l1.2 1.2" strokeLinecap="round" />
+    </svg>
+  )
+}
+
 export function IconTv({ size = 18 }) {
   return (
     <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
