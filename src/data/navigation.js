@@ -50,10 +50,13 @@ export const footerBrand = {
 }
 
 export const contactInfo = {
-  address: 'Lagos, Nigeria',
-  phone: '+234 800 000 0000',
-  phoneHref: 'tel:+2348000000000',
+  address: 'FCT, Abuja',
+  phone: '+234 906 849 1313',
+  phoneHref: 'tel:+2349068491313',
+  whatsappHref:
+    'https://wa.me/2349068491313?text=Hi%2C%20I%27ll%20like%20to%20know%20the%20next%20big%20thing%20happening%20on%20JJRSF',
   email: 'jjrsfoundation@gmail.com',
   emailHref: 'mailto:jjrsfoundation@gmail.com',
-  website: 'www.jjrsfoundation.org',
+  website: 'jjrsf.org',
+  websiteHref: 'https://jjrsf.org',
 }

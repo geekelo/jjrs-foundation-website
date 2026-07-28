@@ -92,7 +92,9 @@ export default function Footer() {
             </li>
             <li>
               <IconPhone size={16} />
-              <a href={contactInfo.phoneHref}>{contactInfo.phone}</a>
+              <a href={contactInfo.whatsappHref} target="_blank" rel="noreferrer">
+                {contactInfo.phone}
+              </a>
             </li>
             <li>
               <IconMail size={16} />
@@ -100,7 +102,9 @@ export default function Footer() {
             </li>
             <li>
               <IconLink size={16} />
-              <a href="#">{contactInfo.website}</a>
+              <a href={contactInfo.websiteHref} target="_blank" rel="noreferrer">
+                {contactInfo.website}
+              </a>
             </li>
           </ul>
         </div>
