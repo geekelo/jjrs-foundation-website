@@ -59,7 +59,13 @@ export default function Footer() {
           <ul className="footer__links">
             {footerResources.map((link) => (
               <li key={link.label}>
-                <Link to={link.to}>{link.label}</Link>
+                {link.to.startsWith('http') ? (
+                  <a href={link.to} target="_blank" rel="noreferrer">
+                    {link.label}
+                  </a>
+                ) : (
+                  <Link to={link.to}>{link.label}</Link>
+                )}
               </li>
             ))}
           </ul>

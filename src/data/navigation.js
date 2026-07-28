@@ -1,10 +1,10 @@
 export const suiteItems = [
-  { label: 'JJRSF Brochure', to: '/#brochure' },
+  { label: 'JJRSF Journal', to: '/journal' },
   { label: 'Events', to: '/#events' },
-  { label: 'JJRSF TV & Radio', to: '/#media' },
-  { label: 'JJRSF e-Library', to: '/#library' },
+  { label: 'JJRSF TV & Radio', to: 'https://tv.jjrsf.org/' },
+  { label: 'JJRSF e-Library', to: 'https://library.jjrsf.org/' },
   { label: 'CLA (Christian Learning Academy)', to: '/#cla' },
-  { label: '360 Devotional', to: '/#devotion' },
+  { label: '360 Devotional', to: 'https://tinyurl.com/360devotional' },
   { label: 'Prayer Schedule', to: '/#prayer-schedule' },
   { label: 'JJRS Photo Album', to: '/#album' },
 ]
@@ -34,9 +34,9 @@ export const footerQuickLinks = [
 
 export const footerResources = [
   { label: 'Blog', to: '/#library' },
-  { label: '360 Devotional', to: '/#devotion' },
-  { label: 'Sermons', to: '/#media' },
-  { label: 'JJRSF e-Library', to: '/#library' },
+  { label: '360 Devotional', to: 'https://tinyurl.com/360devotional' },
+  { label: 'Sermons', to: 'https://tv.jjrsf.org/' },
+  { label: 'JJRSF e-Library', to: 'https://library.jjrsf.org/' },
   { label: 'Christian Learning Academy', to: '/#cla' },
 ]
 

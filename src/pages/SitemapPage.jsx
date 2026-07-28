@@ -25,8 +25,8 @@ export default function SitemapPage() {
               <ul>
                 {section.links.map((link) => (
                   <li key={`${section.title}-${link.label}`}>
-                    {link.external ? (
-                      <a href={link.to}>
+                    {link.external || link.to.startsWith('http') ? (
+                      <a href={link.to} target="_blank" rel="noreferrer">
                         <span>{link.label}</span>
                         <IconArrow size={14} />
                       </a>

@@ -50,9 +50,20 @@ export default function Header() {
                   <ul className="nav__dropdown">
                     {item.children.map((child) => (
                       <li key={child.label}>
-                        <Link to={child.to} onClick={closeMenu}>
-                          {child.label}
-                        </Link>
+                        {child.to.startsWith('http') ? (
+                          <a
+                            href={child.to}
+                            target="_blank"
+                            rel="noreferrer"
+                            onClick={closeMenu}
+                          >
+                            {child.label}
+                          </a>
+                        ) : (
+                          <Link to={child.to} onClick={closeMenu}>
+                            {child.label}
+                          </Link>
+                        )}
                       </li>
                     ))}
                   </ul>

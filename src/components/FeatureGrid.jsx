@@ -38,10 +38,23 @@ export default function FeatureGrid() {
                 )}
 
                 <p className="feature-card__desc">{card.description}</p>
-                <a href={card.href} className="feature-card__link">
-                  {card.cta}
-                  <IconArrow />
-                </a>
+                {card.href.startsWith('/') ? (
+                  <Link to={card.href} className="feature-card__link">
+                    {card.cta}
+                    <IconArrow />
+                  </Link>
+                ) : (
+                  <a
+                    href={card.href}
+                    className="feature-card__link"
+                    {...(card.href.startsWith('http')
+                      ? { target: '_blank', rel: 'noreferrer' }
+                      : {})}
+                  >
+                    {card.cta}
+                    <IconArrow />
+                  </a>
+                )}
               </article>
             )
           })}

@@ -14,12 +14,12 @@ export const sitemapSections = [
   {
     title: 'The JJRSF Suite',
     links: [
-      { label: 'JJRSF Brochure', to: '/#brochure' },
+      { label: 'JJRSF Journal', to: '/journal' },
       { label: 'Events', to: '/#events' },
-      { label: 'JJRSF TV & Radio', to: '/#media' },
-      { label: 'JJRSF e-Library', to: '/#library' },
+      { label: 'JJRSF TV & Radio', to: 'https://tv.jjrsf.org/', external: true },
+      { label: 'JJRSF e-Library', to: 'https://library.jjrsf.org/', external: true },
       { label: 'CLA (Christian Learning Academy)', to: '/#cla' },
-      { label: '360 Devotional', to: '/#devotion' },
+      { label: '360 Devotional', to: 'https://tinyurl.com/360devotional', external: true },
       { label: 'Prayer Schedule', to: '/#prayer-schedule' },
       { label: 'JJRS Photo Album', to: '/#album' },
       { label: 'Give / Donate', to: '/#donate' },
