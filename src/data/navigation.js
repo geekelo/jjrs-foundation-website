@@ -39,7 +39,7 @@ export const footerResources = [
   { label: 'JJRSF e-Library', to: 'https://library.jjrsf.org/' },
   { label: 'Christian Learning Academy', to: '/#cla' },
   { label: 'JJRSF Lay-Up Treasure', to: 'https://layuptreasure.jjrsf.org/' },
-  { label: 'Prayer Studio', to: 'https://tinyurl.com/jjrsfstudio' },
+  { label: 'Prayer Studio', to: 'https://tinyurl.com/jjrsfconferenceroom' },
 ]
 
 export const footerBrand = {

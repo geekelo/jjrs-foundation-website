@@ -20,7 +20,7 @@ export default function PrayerBanner() {
             unity, faith, and love.
           </p>
           <a
-            href="https://tinyurl.com/jjrsfstudio"
+            href="https://tinyurl.com/jjrsfconferenceroom"
             className="btn btn-primary prayer__cta"
             target="_blank"
             rel="noreferrer"

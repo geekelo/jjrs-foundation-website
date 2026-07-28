@@ -56,7 +56,7 @@ export const sitemapSections = [
   {
     title: 'Connect',
     links: [
-      { label: 'Connect to Studio', to: 'https://tinyurl.com/jjrsfstudio', external: true },
+      { label: 'Connect to Studio', to: 'https://tinyurl.com/jjrsfconferenceroom', external: true },
       { label: 'Chat on WhatsApp', to: 'https://wa.me/2349068491313?text=Hi%2C%20I%27ll%20like%20to%20know%20the%20next%20big%20thing%20happening%20on%20JJRSF', external: true },
       { label: 'GIVE/PARTNER', to: '/give' },
       { label: 'Open Lay-Up Treasure Portal', to: 'https://layuptreasure.jjrsf.org/', external: true },
