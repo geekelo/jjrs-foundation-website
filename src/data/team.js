@@ -4,6 +4,7 @@ import obehiOgbeborPhoto from '../assets/team/obehi-ogbebor.jpg'
 import mondayAhmedPhoto from '../assets/team/monday-ahmed.jpg'
 import estherEchePhoto from '../assets/team/esther-eche.jpg'
 import elogheneOtiedePhoto from '../assets/team/eloghene-otiede.jpg'
+import teamPlaceholderPhoto from '../assets/team/placeholder.jpg'
 
 export const currentTeamMembers = [
   {
@@ -207,8 +208,7 @@ export const previousTeamMembers = [
   {
     id: 'ngozi-eze',
     name: 'Ngozi Eze',
-    photo:
-      'https://images.unsplash.com/photo-1598550874175-4d02f6230b8a?auto=format&fit=crop&w=600&q=80',
+    photo: teamPlaceholderPhoto,
     linkedinUrl: 'https://www.linkedin.com/',
     contactFormUrl:
       'mailto:jjrsfoundation@gmail.com?subject=Message%20for%20Ngozi%20Eze',
@@ -236,8 +236,7 @@ export const previousTeamMembers = [
   {
     id: 'tunde-balogun',
     name: 'Tunde Balogun',
-    photo:
-      'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=600&q=80',
+    photo: teamPlaceholderPhoto,
     linkedinUrl: 'https://www.linkedin.com/',
     contactFormUrl:
       'mailto:jjrsfoundation@gmail.com?subject=Message%20for%20Tunde%20Balogun',
@@ -269,8 +268,7 @@ export const previousTeamMembers = [
   {
     id: 'amina-yusuf',
     name: 'Amina Yusuf',
-    photo:
-      'https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=600&q=80',
+    photo: teamPlaceholderPhoto,
     linkedinUrl: 'https://www.linkedin.com/',
     contactFormUrl:
       'mailto:jjrsfoundation@gmail.com?subject=Message%20for%20Amina%20Yusuf',
