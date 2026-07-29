@@ -56,7 +56,7 @@ export const suiteCards = [
     description:
       'Equip yourself through structured courses designed to deepen faith and leadership.',
     cta: 'Learn More',
-    href: '#cla',
+    href: 'https://cla.jjrsf.org/',
     imageKey: 'cla',
   },
   {

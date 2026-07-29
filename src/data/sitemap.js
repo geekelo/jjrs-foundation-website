@@ -19,7 +19,7 @@ export const sitemapSections = [
       { label: 'Events', to: '/#events' },
       { label: 'JJRSF TV & Radio', to: 'https://tv.jjrsf.org/', external: true },
       { label: 'JJRSF e-Library', to: 'https://library.jjrsf.org/', external: true },
-      { label: 'JJRSF CLA (Christian Learning Academy)', to: '/#cla' },
+      { label: 'JJRSF CLA (Christian Learning Academy)', to: 'https://cla.jjrsf.org/', external: true },
       { label: '360 Devotional', to: 'https://tinyurl.com/360devotional', external: true },
       { label: 'JJRSF Calendar', to: '/calendar' },
       { label: 'JJRSF Photo Album', to: 'https://photos.app.goo.gl/9ytSdyqgevSSbqD48', external: true },

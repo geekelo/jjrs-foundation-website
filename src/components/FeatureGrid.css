@@ -1,4 +1,5 @@
 .features {
+  margin-top: 2.5rem;
   padding: 1.5rem 0 3.5rem;
   background: linear-gradient(180deg, var(--white) 0%, var(--lavender) 100%);
 }
@@ -166,7 +167,8 @@
 
 @media (max-width: 640px) {
   .features {
-    padding-top: 0.5rem;
+    margin-top: 1.75rem;
+    padding-top: 1rem;
   }
 
   .features__grid {

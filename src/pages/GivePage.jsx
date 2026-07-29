@@ -1,4 +1,4 @@
-import { IconHeart } from '../components/Icons'
+import { IconArrow } from '../components/Icons'
 import GiveIcon from '../components/GiveIcon'
 import { giveIntro, layUpTreasure } from '../data/give'
 import './GivePage.css'
@@ -21,8 +21,8 @@ export default function GivePage() {
               target="_blank"
               rel="noreferrer"
             >
-              <IconHeart size={15} />
               {layUpTreasure.cta}
+              <IconArrow size={15} />
             </a>
           </div>
         </div>
