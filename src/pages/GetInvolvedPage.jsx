@@ -5,6 +5,7 @@ import {
   IconDiamond,
   IconEye,
   IconHeartOutline,
+  IconLightbulb,
   IconTarget,
   IconUsers,
 } from '../components/Icons'
@@ -52,7 +53,12 @@ export default function GetInvolvedPage() {
       <section className="involved__section" aria-labelledby="about-jjrsf">
         <div className="container involved__about">
           <div className="involved__copy">
-            <h2 id="about-jjrsf">About JJRSF</h2>
+            <h2 id="about-jjrsf" className="involved__heading">
+              <span className="involved__heading-icon" aria-hidden="true">
+                <IconLightbulb size={22} />
+              </span>
+              About JJRSF
+            </h2>
             <p>{aboutCopy.intro}</p>
             <ul className="involved__aims">
               {supportAims.map((item) => (
@@ -70,10 +76,12 @@ export default function GetInvolvedPage() {
                 const Icon = pillarIcons[pillar.icon]
                 return (
                   <li key={pillar.id} className="involved__pillar">
-                    <span className="involved__pillar-icon" aria-hidden="true">
-                      <Icon size={22} />
-                    </span>
-                    <h3 className="involved__pillar-title">{pillar.title}</h3>
+                    <h3 className="involved__pillar-title">
+                      <span className="involved__pillar-icon" aria-hidden="true">
+                        <Icon size={18} />
+                      </span>
+                      {pillar.title}
+                    </h3>
                     <p className="involved__pillar-body">{pillar.body}</p>
                   </li>
                 )
