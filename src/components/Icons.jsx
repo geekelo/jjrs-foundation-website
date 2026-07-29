@@ -296,3 +296,81 @@ export function IconBuilding({ size = 18 }) {
     </svg>
   )
 }
+
+export function IconEye({ size = 24 }) {
+  return (
+    <svg
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.75"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden="true"
+    >
+      <path d="M2.5 12s3.5-6.5 9.5-6.5S21.5 12 21.5 12s-3.5 6.5-9.5 6.5S2.5 12 2.5 12z" />
+      <circle cx="12" cy="12" r="2.75" />
+      <path d="M12 2.5v1.5M12 20v1.5M4.2 5.5l1.2 1.2M18.6 17.3l1.2 1.2M2.5 12H4M20 12h1.5M4.2 18.5l1.2-1.2M18.6 6.7l1.2-1.2" />
+    </svg>
+  )
+}
+
+export function IconTarget({ size = 24 }) {
+  return (
+    <svg
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.75"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden="true"
+    >
+      <circle cx="12" cy="12" r="8.5" />
+      <circle cx="12" cy="12" r="5" />
+      <circle cx="12" cy="12" r="1.5" fill="currentColor" stroke="none" />
+      <path d="m16.5 7.5 4-1-1 4-3.5-1.5z" />
+    </svg>
+  )
+}
+
+export function IconHeartOutline({ size = 24 }) {
+  return (
+    <svg
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.75"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden="true"
+    >
+      <path d="M12 20.5s-7-4.4-9.2-8C.8 9.4 2.6 5.8 6.2 5.8c1.9 0 3.3 1.1 4 2.3.7-1.2 2.1-2.3 4-2.3 3.6 0 5.4 3.6 3.4 6.7-2.2 3.6-9.2 8-9.2 8z" />
+    </svg>
+  )
+}
+
+export function IconDiamond({ size = 24 }) {
+  return (
+    <svg
+      width={size}
+      height={size}
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="1.75"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden="true"
+    >
+      <path d="M6 4.5h12l3.5 5.5L12 21 2.5 10z" />
+      <path d="M2.5 10h19M12 21 8.2 10 10.5 4.5M12 21l3.8-11L13.5 4.5" />
+    </svg>
+  )
+}

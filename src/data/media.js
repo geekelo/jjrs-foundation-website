@@ -2,6 +2,7 @@ import aboutImg1 from '../assets/involved/about-1.jpg'
 import aboutImg2 from '../assets/involved/about-2.jpg'
 import aboutImg3 from '../assets/involved/about-3.jpg'
 import aboutImg4 from '../assets/involved/about-4.jpg'
+import pillarsBg from '../assets/involved/pillars-bg.png'
 
 export const aboutPhotos = [
   {
@@ -20,3 +21,4 @@ export const aboutPhotos = [
 ]
 
 export const historyBackground = aboutImg4
+export const pillarsBackground = pillarsBg

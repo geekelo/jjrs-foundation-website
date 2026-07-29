@@ -41,6 +41,39 @@ export const aboutCopy = {
   coreValues: ['Integrity', 'Selflessness', 'Excellence'],
 }
 
+export const aboutPillars = [
+  {
+    id: 'vision',
+    title: 'Our Vision',
+    body: 'For people to be all God has made them to be.',
+    icon: 'eye',
+  },
+  {
+    id: 'mission',
+    title: 'Our Mission',
+    body: 'Our mission drivers are to Pray the all power and help of God, Love by engaging in all forms of giving and Partner with people of like faith by providing support systems necessary for the advancement of the Kingdom of God.',
+    icon: 'target',
+  },
+  {
+    id: 'motto',
+    title: 'Our Motto',
+    body: 'Loving People, Pulling Them Out of Pits',
+    icon: 'heart',
+  },
+  {
+    id: 'activities',
+    title: 'Our Core Activities',
+    body: 'Pray, Love and Partner',
+    icon: 'users',
+  },
+  {
+    id: 'values',
+    title: 'Our Core Values',
+    body: 'Integrity, Selflessness and Excellence',
+    icon: 'diamond',
+  },
+]
+
 export const briefHistory = {
   paragraphs: [
     'JJRS Foundation was inspired in 2001 by Romans 12:8 (NLT); if your gift is to encourage others, be encouraging. If it is giving, give generously. If God has given you leadership ability, take the responsibility seriously. And if you have a gift for showing kindness to others, do it gladly. It started in 2004 at Kano as a platform to assist people with meeting their basic needs.',

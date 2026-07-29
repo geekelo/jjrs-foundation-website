@@ -1,17 +1,34 @@
 import { Link } from 'react-router-dom'
-import { IconArrow, IconBriefcase } from '../components/Icons'
+import {
+  IconArrow,
+  IconBriefcase,
+  IconDiamond,
+  IconEye,
+  IconHeartOutline,
+  IconTarget,
+  IconUsers,
+} from '../components/Icons'
 import GetInvolvedIcon from '../components/GetInvolvedIcon'
 import {
   supportAims,
   socialOutlets,
   departmentNames,
   aboutCopy,
+  aboutPillars,
   briefHistory,
 } from '../data/getInvolved'
 import { initiatives } from '../data/initiatives'
-import { aboutPhotos, historyBackground } from '../data/media'
+import { aboutPhotos, historyBackground, pillarsBackground } from '../data/media'
 import { icons } from '../data/icons'
 import './GetInvolvedPage.css'
+
+const pillarIcons = {
+  eye: IconEye,
+  target: IconTarget,
+  heart: IconHeartOutline,
+  users: IconUsers,
+  diamond: IconDiamond,
+}
 
 export default function GetInvolvedPage() {
   return (
@@ -45,30 +62,23 @@ export default function GetInvolvedPage() {
             <p>{aboutCopy.purposeUnbelievers}</p>
             <p>{aboutCopy.purposeBelievers}</p>
 
-            <div className="involved__mission-block">
-              <h3>Our Vision</h3>
-              <p>{aboutCopy.vision}</p>
-            </div>
-
-            <div className="involved__mission-block">
-              <h3>Our Mission</h3>
-              <p>{aboutCopy.mission}</p>
-            </div>
-
-            <div className="involved__mission-block">
-              <h3>Our Motto</h3>
-              <p>{aboutCopy.motto}</p>
-            </div>
-
-            <div className="involved__mission-block">
-              <h3>Our Core Activities</h3>
-              <p>Pray, Love and Partner</p>
-            </div>
-
-            <div className="involved__mission-block">
-              <h3>Our Core Values</h3>
-              <p>Integrity, Selflessness and Excellence</p>
-            </div>
+            <ul
+              className="involved__pillars"
+              style={{ '--pillars-bg': `url(${pillarsBackground})` }}
+            >
+              {aboutPillars.map((pillar) => {
+                const Icon = pillarIcons[pillar.icon]
+                return (
+                  <li key={pillar.id} className="involved__pillar">
+                    <span className="involved__pillar-icon" aria-hidden="true">
+                      <Icon size={22} />
+                    </span>
+                    <h3 className="involved__pillar-title">{pillar.title}</h3>
+                    <p className="involved__pillar-body">{pillar.body}</p>
+                  </li>
+                )
+              })}
+            </ul>
           </div>
 
           <div className="involved__photos" aria-label="JJRS Foundation moments">
