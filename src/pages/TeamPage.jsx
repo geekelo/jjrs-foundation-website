@@ -16,7 +16,12 @@ function TeamMemberCard({ member, isPrevious = false }) {
 
       <div className="team-card__body">
         <div className="team-card__header">
-          <h3>{member.name}</h3>
+          <div>
+            <h3>{member.name}</h3>
+            {member.claGraduate ? (
+              <p className="team-card__badge">CLA Graduate</p>
+            ) : null}
+          </div>
           <div className="team-card__actions">
             <a
               href={member.linkedinUrl}
@@ -74,10 +79,14 @@ function TeamMemberCard({ member, isPrevious = false }) {
             <ul className="team-card__achievements">
               {member.achievements.map((item) => (
                 <li key={item.title}>
-                  <a href={item.url} target="_blank" rel="noreferrer">
-                    {item.title}
-                    <IconArrow size={12} />
-                  </a>
+                  {item.url ? (
+                    <a href={item.url} target="_blank" rel="noreferrer">
+                      {item.title}
+                      <IconArrow size={12} />
+                    </a>
+                  ) : (
+                    <span>{item.title}</span>
+                  )}
                 </li>
               ))}
             </ul>
