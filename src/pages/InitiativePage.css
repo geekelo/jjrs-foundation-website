@@ -1,0 +1,323 @@
+.initiative__hero {
+  background:
+    radial-gradient(ellipse 70% 80% at 10% 20%, rgba(91, 58, 158, 0.14), transparent 55%),
+    linear-gradient(180deg, var(--lavender) 0%, var(--white) 100%);
+  padding: 3.25rem 0 2.5rem;
+}
+
+.initiative__hero-inner {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 1.5rem 2rem;
+  align-items: start;
+}
+
+.initiative__hero-icon {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 1rem;
+  display: grid;
+  place-items: center;
+  background: var(--purple-100);
+  color: var(--purple-900);
+}
+
+.initiative__hero-copy {
+  max-width: 44rem;
+}
+
+.initiative__eyebrow {
+  display: inline-block;
+  margin-bottom: 0.85rem;
+  padding: 0.35rem 0.75rem;
+  border-radius: 999px;
+  background: var(--purple-100);
+  color: var(--purple-900);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.initiative__hero h1 {
+  font-size: clamp(1.85rem, 4vw, 2.6rem);
+  letter-spacing: -0.03em;
+  color: var(--purple-900);
+  margin-bottom: 0.85rem;
+}
+
+.initiative__hero p {
+  line-height: 1.7;
+  color: var(--text);
+}
+
+.initiative__hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.35rem;
+}
+
+.initiative__ambassador {
+  padding: 2rem 0 2.5rem;
+  background: var(--white);
+}
+
+.initiative__ambassador-inner {
+  display: grid;
+  grid-template-columns: minmax(0, 220px) minmax(0, 1fr);
+  gap: 1.75rem 2.25rem;
+  align-items: center;
+  padding: 1.5rem;
+  border-radius: var(--radius-lg);
+  background: var(--lavender);
+  border: 1px solid rgba(61, 33, 124, 0.06);
+}
+
+.initiative__ambassador-photo {
+  aspect-ratio: 1;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  background: var(--purple-100);
+}
+
+.initiative__ambassador-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.initiative__ambassador-copy h2 {
+  font-size: clamp(1.35rem, 2.5vw, 1.75rem);
+  color: var(--purple-900);
+  margin-bottom: 0.35rem;
+}
+
+.initiative__ambassador-role {
+  font-weight: 600;
+  color: var(--purple-800);
+  margin-bottom: 0.75rem;
+}
+
+.initiative__ambassador-copy p {
+  line-height: 1.7;
+  color: var(--text);
+}
+
+.initiative__impacts {
+  padding: 1rem 0 3.5rem;
+  background: linear-gradient(180deg, var(--white) 0%, var(--lavender) 100%);
+}
+
+.initiative__section-head {
+  max-width: 40rem;
+  margin-bottom: 1.5rem;
+}
+
+.initiative__section-head h2 {
+  font-size: clamp(1.4rem, 2.5vw, 1.85rem);
+  color: var(--purple-900);
+  margin-bottom: 0.55rem;
+}
+
+.initiative__section-head p {
+  line-height: 1.65;
+  color: var(--text);
+}
+
+.initiative__impact-list {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.impact-card {
+  background: var(--white);
+  border: 1px solid rgba(61, 33, 124, 0.06);
+  border-radius: var(--radius-lg);
+  padding: 1.35rem 1.4rem 1.5rem;
+  box-shadow: var(--shadow-soft);
+}
+
+.impact-card h3 {
+  font-size: 1.15rem;
+  line-height: 1.4;
+  color: var(--text-dark);
+  margin-bottom: 1rem;
+}
+
+.impact-card__meta {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.85rem 1rem;
+  margin: 0 0 1.15rem;
+  padding: 1rem;
+  border-radius: var(--radius-md);
+  background: var(--lavender);
+}
+
+.impact-card__meta dt {
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 0.25rem;
+}
+
+.impact-card__meta dd {
+  margin: 0;
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--purple-900);
+  line-height: 1.4;
+}
+
+.impact-card__block {
+  margin-bottom: 1rem;
+}
+
+.impact-card__block h4 {
+  font-size: 0.85rem;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--purple-900);
+  margin-bottom: 0.4rem;
+}
+
+.impact-card__block p,
+.impact-card__block li {
+  font-size: 0.92rem;
+  line-height: 1.65;
+  color: var(--text);
+}
+
+.impact-card__block ul {
+  margin: 0;
+  padding-left: 1.15rem;
+}
+
+.impact-card__block li + li {
+  margin-top: 0.3rem;
+}
+
+.impact-card__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-top: 0.35rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--purple-900);
+  transition: gap 0.2s ease;
+}
+
+.impact-card__link:hover {
+  gap: 0.65rem;
+}
+
+.initiative__more {
+  padding: 0 0 3.5rem;
+  background: var(--lavender);
+}
+
+.initiative__more h2 {
+  font-size: 1.25rem;
+  color: var(--purple-900);
+  margin-bottom: 1rem;
+}
+
+.initiative__more-grid {
+  display: grid;
+  gap: 0.85rem;
+}
+
+.initiative-mini {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  gap: 0.85rem;
+  align-items: center;
+  padding: 1rem 1.1rem;
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  border: 1px solid rgba(61, 33, 124, 0.06);
+  box-shadow: var(--shadow-soft);
+  color: inherit;
+  transition:
+    transform 0.2s var(--ease-out),
+    box-shadow 0.2s var(--ease-out);
+}
+
+.initiative-mini:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-card);
+}
+
+.initiative-mini__icon {
+  width: 2.35rem;
+  height: 2.35rem;
+  border-radius: 0.7rem;
+  display: grid;
+  place-items: center;
+  background: var(--purple-50);
+  color: var(--purple-900);
+}
+
+.initiative-mini strong {
+  display: block;
+  font-size: 0.95rem;
+  color: var(--text-dark);
+  margin-bottom: 0.2rem;
+}
+
+.initiative-mini small {
+  display: block;
+  font-size: 0.82rem;
+  line-height: 1.45;
+  color: var(--text);
+}
+
+.initiative--missing {
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.initiative--missing h1 {
+  color: var(--purple-900);
+  margin-bottom: 0.65rem;
+}
+
+.initiative--missing p {
+  margin-bottom: 1.25rem;
+  color: var(--text);
+}
+
+@media (max-width: 900px) {
+  .impact-card__meta {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .initiative__hero {
+    padding: 2.25rem 0 1.75rem;
+  }
+
+  .initiative__hero-inner,
+  .initiative__ambassador-inner {
+    grid-template-columns: 1fr;
+  }
+
+  .initiative__ambassador-photo {
+    max-width: 220px;
+  }
+
+  .impact-card__meta {
+    grid-template-columns: 1fr;
+  }
+
+  .initiative__impacts,
+  .initiative__more {
+    padding-bottom: 2.75rem;
+  }
+}

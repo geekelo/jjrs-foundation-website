@@ -1,4 +1,5 @@
 export * from './getInvolved'
+export * from './initiatives'
 export * from './suite'
 export * from './navigation'
 export * from './socials'

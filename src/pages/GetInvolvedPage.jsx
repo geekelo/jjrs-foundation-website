@@ -3,12 +3,12 @@ import { IconArrow, IconBriefcase } from '../components/Icons'
 import GetInvolvedIcon from '../components/GetInvolvedIcon'
 import {
   supportAims,
-  initiatives,
   socialOutlets,
   departmentNames,
   aboutCopy,
   briefHistory,
 } from '../data/getInvolved'
+import { initiatives } from '../data/initiatives'
 import { aboutPhotos, historyBackground } from '../data/media'
 import { icons } from '../data/icons'
 import './GetInvolvedPage.css'
@@ -91,19 +91,19 @@ export default function GetInvolvedPage() {
             <p>Choose an initiative and walk with us in purpose and impact.</p>
           </div>
           <div className="involved__cards">
-            {initiatives.map(({ title, description, icon }) => {
+            {initiatives.map(({ slug, title, shortDescription, icon }) => {
               const Icon = icons[icon]
               return (
-                <article key={title} className="involved-card">
+                <article key={slug} className="involved-card">
                   <div className="involved-card__icon" aria-hidden="true">
                     <Icon size={20} />
                   </div>
                   <h3>{title}</h3>
-                  <p>{description}</p>
-                  <a href="#connect" className="involved-card__link">
+                  <p>{shortDescription}</p>
+                  <Link to={`/initiatives/${slug}`} className="involved-card__link">
                     Get Started
                     <IconArrow />
-                  </a>
+                  </Link>
                 </article>
               )
             })}

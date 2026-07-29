@@ -5,33 +5,6 @@ export const supportAims = [
   'Everyone we meet to attain their full potential as ordained by God.',
 ]
 
-export const initiatives = [
-  {
-    title: 'Ministry Support Initiative',
-    description:
-      'Stand with Grace Ministers and Ministries as they preach Christ and strengthen the body of believers.',
-    icon: 'cross',
-  },
-  {
-    title: 'Education Support Initiative',
-    description:
-      'Help students and families access learning opportunities while they grow in faith and purpose.',
-    icon: 'school',
-  },
-  {
-    title: 'Healing Support Initiative',
-    description:
-      'Partner with us to support medical needs and care for those awaiting God’s provision and healing.',
-    icon: 'heart',
-  },
-  {
-    title: 'Business Support Initiative',
-    description:
-      'Empower people to build sustainable livelihoods and walk in their God-given calling with dignity.',
-    icon: 'handshake',
-  },
-]
-
 export const socialOutlets = [
   {
     label: 'WhatsApp',

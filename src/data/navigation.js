@@ -9,6 +9,13 @@ export const suiteItems = [
   { label: 'JJRSF Photo Album', to: 'https://photos.app.goo.gl/9ytSdyqgevSSbqD48' },
 ]
 
+export const initiativeItems = [
+  { label: 'Ministry Support Initiative', to: '/initiatives/ministry-support' },
+  { label: 'Education Support Initiative', to: '/initiatives/education-support' },
+  { label: 'Healing Support Initiative', to: '/initiatives/healing-support' },
+  { label: 'Business Support Initiative', to: '/initiatives/business-support' },
+]
+
 export const navItems = [
   { label: 'About', to: '/get-involved#about-jjrsf' },
   { label: 'Sitemap', to: '/sitemap' },
@@ -18,7 +25,11 @@ export const navItems = [
     to: '/#suite',
     children: suiteItems,
   },
-  { label: 'Initiatives', to: '/get-involved#initiatives-heading' },
+  {
+    label: 'Initiatives',
+    to: '/get-involved#initiatives-heading',
+    children: initiativeItems,
+  },
   { label: 'Testimonies', to: '/#testimonies' },
 ]
 

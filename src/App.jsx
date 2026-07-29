@@ -7,6 +7,7 @@ import TeamPage from './pages/TeamPage'
 import JournalPage from './pages/JournalPage'
 import CalendarPage from './pages/CalendarPage'
 import GivePage from './pages/GivePage'
+import InitiativePage from './pages/InitiativePage'
 import SitemapPage from './pages/SitemapPage'
 import ScrollToTop from './components/ScrollToTop'
 import './App.css'
@@ -24,6 +25,7 @@ function App() {
           <Route path="journal" element={<JournalPage />} />
           <Route path="calendar" element={<CalendarPage />} />
           <Route path="give" element={<GivePage />} />
+          <Route path="initiatives/:slug" element={<InitiativePage />} />
           <Route path="sitemap" element={<SitemapPage />} />
         </Route>
       </Routes>
