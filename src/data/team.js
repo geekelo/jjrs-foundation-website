@@ -3,6 +3,7 @@ import johnOwoichoPhoto from '../assets/team/john-owoicho.jpg'
 import obehiOgbeborPhoto from '../assets/team/obehi-ogbebor.jpg'
 import mondayAhmedPhoto from '../assets/team/monday-ahmed.jpg'
 import estherEchePhoto from '../assets/team/esther-eche.jpg'
+import elogheneOtiedePhoto from '../assets/team/eloghene-otiede.jpg'
 
 export const currentTeamMembers = [
   {
@@ -162,6 +163,41 @@ export const currentTeamMembers = [
     achievements: [
       {
         title: 'CLA Cohort 2 Valedictorian',
+      },
+    ],
+  },
+  {
+    id: 'eloghene-otiede',
+    name: 'Eloghene Otiede',
+    photo: elogheneOtiedePhoto,
+    region: 'Africa — Nigeria',
+    email: 'efuelight12@gmail.com',
+    linkedinUrl: 'https://www.linkedin.com/in/eloghene-otiede',
+    contactFormUrl:
+      'mailto:efuelight12@gmail.com?subject=Message%20for%20Eloghene%20Otiede',
+    claGraduate: true,
+    currentPositions: [
+      {
+        title: 'Head of Tech and Media (HITM)',
+        organization: 'JJRS Foundation',
+        startDate: 'Mar 2023',
+      },
+      {
+        title: 'Head of Tech and Media (HITM)',
+        organization: 'JJRSF CLA',
+        startDate: 'Jan 2024',
+      },
+    ],
+    previousPositions: [],
+    achievements: [
+      {
+        title: 'Member of the JJRSF CLA Board of Governors since 2024',
+      },
+      {
+        title: 'CLA Certificate of Honors 2025',
+      },
+      {
+        title: 'Developed and launched JJRSF and CLA tech products since 2024',
       },
     ],
   },
