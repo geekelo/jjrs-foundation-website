@@ -1,4 +1,8 @@
 import tundePhillipsPhoto from '../assets/team/tunde-phillips.jpg'
+import johnOwoichoPhoto from '../assets/team/john-owoicho.jpg'
+import obehiOgbeborPhoto from '../assets/team/obehi-ogbebor.jpg'
+import mondayAhmedPhoto from '../assets/team/monday-ahmed.jpg'
+import estherEchePhoto from '../assets/team/esther-eche.jpg'
 
 export const currentTeamMembers = [
   {
@@ -43,6 +47,121 @@ export const currentTeamMembers = [
       {
         title:
           'Got several saved and established in Christ; held several programs that nourish and advance the Body of Christ',
+      },
+    ],
+  },
+  {
+    id: 'john-owoicho',
+    name: 'John Owoicho',
+    photo: johnOwoichoPhoto,
+    region: 'Africa — Nigeria',
+    phone: '+2347054090479',
+    email: 'johnocheowoicho@gmail.com',
+    linkedinUrl: 'https://www.linkedin.com/in/john-owoicho-302b8889',
+    contactFormUrl:
+      'mailto:johnocheowoicho@gmail.com?subject=Message%20for%20John%20Owoicho',
+    claGraduate: true,
+    currentPositions: [
+      {
+        title: 'Management Team Member',
+        organization: 'JJRS Foundation',
+        startDate: '2011',
+      },
+    ],
+    previousPositions: [
+      {
+        title: 'Chief of Staff',
+        organization: 'JJRS Foundation',
+        startDate: '2011',
+        endDate: '2021',
+      },
+    ],
+    achievements: [
+      {
+        title: 'NOPAD: 2013 – 2020',
+      },
+      {
+        title: 'Three book launches',
+      },
+    ],
+  },
+  {
+    id: 'obehi-ogbebor',
+    name: 'Obehi Ogbebor',
+    photo: obehiOgbeborPhoto,
+    region: 'Africa — Nigeria',
+    phone: '+2348183385343',
+    email: 'Purplzchef@gmail.com',
+    contactFormUrl:
+      'mailto:Purplzchef@gmail.com?subject=Message%20for%20Obehi%20Ogbebor',
+    claGraduate: true,
+    currentPositions: [
+      {
+        title: 'Assistant',
+        organization: 'Healing Support Initiative',
+        startDate: 'Nov 2025',
+      },
+      {
+        title: 'Member',
+        organization: 'JJRS Foundation',
+        startDate: '2019',
+      },
+    ],
+    previousPositions: [],
+    achievements: [
+      {
+        title: 'CLA certification',
+      },
+    ],
+  },
+  {
+    id: 'monday-ahmed',
+    name: 'Monday Ahmed',
+    photo: mondayAhmedPhoto,
+    region: 'Africa — Nigeria',
+    phone: '+2347032952262',
+    email: 'seawen45@gmail.com',
+    linkedinUrl: 'https://www.linkedin.com/in/monday-ahmed-93',
+    contactFormUrl:
+      'mailto:seawen45@gmail.com?subject=Message%20for%20Monday%20Ahmed',
+    claGraduate: true,
+    currentPositions: [
+      {
+        title: 'DD Services',
+        organization: 'JJRS Foundation',
+        startDate: '2023',
+      },
+    ],
+    previousPositions: [],
+    achievements: [
+      {
+        title:
+          'Coordinating the movement of attendees from various parts of Nigeria for NOPAD',
+      },
+    ],
+  },
+  {
+    id: 'esther-eche',
+    name: 'Esther Eche',
+    photo: estherEchePhoto,
+    region: 'Africa — Nigeria',
+    phone: '+2347068971853',
+    email: 'myesther97@gmail.com',
+    linkedinUrl: 'https://www.linkedin.com/in/esther-eche-8048a3144',
+    contactFormUrl:
+      'mailto:myesther97@gmail.com?subject=Message%20for%20Esther%20Eche',
+    claGraduate: true,
+    currentPositions: [
+      {
+        title: 'Assistant Financial Secretary',
+        organization: 'JJRS Foundation',
+        startDate: 'Mar 2026',
+      },
+    ],
+    previousPositions: [],
+    achievements: [
+      {
+        title: 'CLA Cohort 2 Valedictorian',
       },
     ],
   },

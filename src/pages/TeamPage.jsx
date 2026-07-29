@@ -23,15 +23,17 @@ function TeamMemberCard({ member, isPrevious = false }) {
             ) : null}
           </div>
           <div className="team-card__actions">
-            <a
-              href={member.linkedinUrl}
-              className="team-card__icon-btn"
-              aria-label={`${member.name} on LinkedIn`}
-              target="_blank"
-              rel="noreferrer"
-            >
-              <IconLinkedin size={16} />
-            </a>
+            {member.linkedinUrl ? (
+              <a
+                href={member.linkedinUrl}
+                className="team-card__icon-btn"
+                aria-label={`${member.name} on LinkedIn`}
+                target="_blank"
+                rel="noreferrer"
+              >
+                <IconLinkedin size={16} />
+              </a>
+            ) : null}
             <a href={member.contactFormUrl} className="team-card__contact">
               <IconMail size={14} />
               Contact
