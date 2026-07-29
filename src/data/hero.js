@@ -31,8 +31,12 @@ export const HERO_SLIDE_INTERVAL_MS = 5000
 
 export const heroCopy = {
   eyebrow: 'Welcome to JJRS Foundation',
-  title:
-    'Pulling unbelievers out of the pit of sin which is unbelief in Jesus.',
+  titleLines: [
+    { text: 'Loving People.', accent: false },
+    { text: 'Pulling Them', accent: false },
+    { text: 'Out of Pits.', accent: true },
+  ],
+  title: 'Loving People. Pulling Them Out of Pits.',
   lead:
     'We aim at lifting believers out of the pit of religion and self effort in order for all to be saved and come to the knowledge of the truth.',
   quote:

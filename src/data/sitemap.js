@@ -32,8 +32,11 @@ export const sitemapSections = [
     links: [
       { label: 'About JJRSF', to: '/get-involved#about-jjrsf' },
       { label: 'Brief History', to: '/get-involved#brief-history' },
-      { label: 'Our Mission', to: '/get-involved#about-jjrsf' },
       { label: 'Our Vision', to: '/get-involved#about-jjrsf' },
+      { label: 'Our Mission', to: '/get-involved#about-jjrsf' },
+      { label: 'Our Motto', to: '/get-involved#about-jjrsf' },
+      { label: 'Our Core Activities', to: '/get-involved#about-jjrsf' },
+      { label: 'Our Core Values', to: '/get-involved#about-jjrsf' },
       { label: 'Initiatives', to: '/get-involved#initiatives-heading' },
       { label: 'Ministry Support Initiative', to: '/initiatives/ministry-support' },
       { label: 'Education Support Initiative', to: '/initiatives/education-support' },

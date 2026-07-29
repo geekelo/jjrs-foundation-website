@@ -27,7 +27,14 @@ export default function Hero() {
         <div className="hero__content">
           <p className="hero__eyebrow reveal">{heroCopy.eyebrow}</p>
           <h1 id="hero-heading" className="hero__title reveal reveal-delay-1">
-            {heroCopy.title}
+            {heroCopy.titleLines.map(({ text, accent }) => (
+              <span
+                key={text}
+                className={`hero__title-line${accent ? ' hero__title-line--accent' : ''}`}
+              >
+                {text}
+              </span>
+            ))}
           </h1>
           <p className="hero__lead reveal reveal-delay-2">{heroCopy.lead}</p>
           <div className="hero__actions reveal reveal-delay-3">

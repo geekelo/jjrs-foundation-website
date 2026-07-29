@@ -46,13 +46,28 @@ export default function GetInvolvedPage() {
             <p>{aboutCopy.purposeBelievers}</p>
 
             <div className="involved__mission-block">
+              <h3>Our Vision</h3>
+              <p>{aboutCopy.vision}</p>
+            </div>
+
+            <div className="involved__mission-block">
               <h3>Our Mission</h3>
               <p>{aboutCopy.mission}</p>
             </div>
 
             <div className="involved__mission-block">
-              <h3>Our Vision</h3>
-              <p>{aboutCopy.vision}</p>
+              <h3>Our Motto</h3>
+              <p>{aboutCopy.motto}</p>
+            </div>
+
+            <div className="involved__mission-block">
+              <h3>Our Core Activities</h3>
+              <p>Pray, Love and Partner</p>
+            </div>
+
+            <div className="involved__mission-block">
+              <h3>Our Core Values</h3>
+              <p>Integrity, Selflessness and Excellence</p>
             </div>
           </div>
 

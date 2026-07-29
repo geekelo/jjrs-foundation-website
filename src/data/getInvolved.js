@@ -35,7 +35,10 @@ export const aboutCopy = {
     'We aim at lifting believers out of the pit of religion and self effort in order for all to be saved and come to the knowledge of the truth.',
   mission:
     'Our mission drivers are to Pray the all power and help of God, Love by engaging in all forms of giving and Partner with people of like faith by providing support systems necessary for the advancement of the Kingdom of God.',
-  vision: 'We aim at supporting Ministers, Ministries and the NEEDY.',
+  vision: 'For people to be all God has made them to be.',
+  motto: 'Loving People, Pulling Them Out of Pits',
+  coreActivities: ['Pray', 'Love', 'Partner'],
+  coreValues: ['Integrity', 'Selflessness', 'Excellence'],
 }
 
 export const briefHistory = {
