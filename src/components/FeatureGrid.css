@@ -22,6 +22,7 @@
 
 .feature-card,
 .feature-cta {
+  position: relative;
   background: var(--white);
   border: 1px solid rgba(61, 33, 124, 0.06);
   border-radius: var(--radius-lg);
@@ -30,14 +31,26 @@
   display: flex;
   flex-direction: column;
   transition:
-    transform 0.3s var(--ease-out),
     box-shadow 0.3s var(--ease-out);
 }
 
-.feature-card:hover,
-.feature-cta:hover {
-  transform: translateY(-4px);
-  box-shadow: var(--shadow-card);
+@media (hover: hover) and (pointer: fine) {
+  .feature-card,
+  .feature-cta {
+    transition:
+      transform 0.3s var(--ease-out),
+      box-shadow 0.3s var(--ease-out);
+  }
+
+  .feature-card:hover,
+  .feature-cta:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-card);
+  }
+
+  .feature-card:hover .feature-card__image img {
+    transform: scale(1.04);
+  }
 }
 
 .feature-card__icon,
@@ -71,10 +84,6 @@
   height: 100%;
   object-fit: cover;
   transition: transform 0.5s var(--ease-out);
-}
-
-.feature-card:hover .feature-card__image img {
-  transform: scale(1.04);
 }
 
 .feature-card__collage {
@@ -111,10 +120,25 @@
   color: var(--purple-900);
   margin-top: auto;
   transition: gap 0.2s ease;
+  touch-action: manipulation;
 }
 
-.feature-card__link:hover {
-  gap: 0.65rem;
+.feature-card__link::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+.feature-card__link > * {
+  position: relative;
+  z-index: 2;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .feature-card__link:hover {
+    gap: 0.65rem;
+  }
 }
 
 .feature-card--featured {
@@ -143,8 +167,10 @@
   border-radius: var(--radius-sm);
 }
 
-.feature-card--featured .feature-card__link:hover {
-  background: var(--purple-50);
+@media (hover: hover) and (pointer: fine) {
+  .feature-card--featured .feature-card__link:hover {
+    background: var(--purple-50);
+  }
 }
 
 .feature-cta {
