@@ -7,51 +7,51 @@ import elogheneOtiedePhoto from '../assets/team/eloghene-otiede.jpg'
 import teamPlaceholderPhoto from '../assets/team/placeholder.jpg'
 
 export const currentTeamMembers = [
-  {
-    id: 'tunde-phillips',
-    name: 'Tunde Phillips',
-    photo: tundePhillipsPhoto,
-    region: 'Africa — Nigeria',
-    phone: '+2348099145730',
-    email: 'tphill291@gmail.com',
-    linkedinUrl: 'https://www.linkedin.com/in/tunde-phillips-9ab41b37',
-    contactFormUrl: 'mailto:tphill291@gmail.com?subject=Message%20for%20Tunde%20Phillips',
-    claGraduate: true,
-    currentPositions: [
-      {
-        title: 'Deputy CEO',
-        organization: 'JJRS Foundation',
-        startDate: 'Jan 2024',
-      },
-    ],
-    previousPositions: [
-      {
-        title: 'CEO',
-        organization: 'JJRS Foundation',
-        startDate: 'Before 2024',
-        endDate: 'Dec 2023',
-      },
-    ],
-    achievements: [
-      {
-        title:
-          'Co-Founder and Visioner; led and grew a workforce from 2 to over 80',
-      },
-      {
-        title: 'Held 10 editions of NOPAD',
-      },
-      {
-        title: '2 CLA graduations with an alumni of 140 leaders',
-      },
-      {
-        title: 'Co-written 12 books and involved in many others and music albums',
-      },
-      {
-        title:
-          'Got several saved and established in Christ; held several programs that nourish and advance the Body of Christ',
-      },
-    ],
-  },
+  // {
+  //   id: 'tunde-phillips',
+  //   name: 'Tunde Phillips',
+  //   photo: tundePhillipsPhoto,
+  //   region: 'Africa — Nigeria',
+  //   phone: '+2348099145730',
+  //   email: 'tphill291@gmail.com',
+  //   linkedinUrl: 'https://www.linkedin.com/in/tunde-phillips-9ab41b37',
+  //   contactFormUrl: 'mailto:tphill291@gmail.com?subject=Message%20for%20Tunde%20Phillips',
+  //   claGraduate: true,
+  //   currentPositions: [
+  //     {
+  //       title: 'Deputy CEO',
+  //       organization: 'JJRS Foundation',
+  //       startDate: 'Jan 2024',
+  //     },
+  //   ],
+  //   previousPositions: [
+  //     {
+  //       title: 'CEO',
+  //       organization: 'JJRS Foundation',
+  //       startDate: 'Before 2024',
+  //       endDate: 'Dec 2023',
+  //     },
+  //   ],
+  //   achievements: [
+  //     {
+  //       title:
+  //         'Co-Founder and Visioner; led and grew a workforce from 2 to over 80',
+  //     },
+  //     {
+  //       title: 'Held 10 editions of NOPAD',
+  //     },
+  //     {
+  //       title: '2 CLA graduations with an alumni of 140 leaders',
+  //     },
+  //     {
+  //       title: 'Co-written 12 books and involved in many others and music albums',
+  //     },
+  //     {
+  //       title:
+  //         'Got several saved and established in Christ; held several programs that nourish and advance the Body of Christ',
+  //     },
+  //   ],
+  // },
   {
     id: 'john-owoicho',
     name: 'John Owoicho',
