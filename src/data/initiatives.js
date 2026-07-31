@@ -1,3 +1,6 @@
+import berniceEmieneAbimajePhoto from '../assets/team/bernice-emiene-abimaje.jpg'
+import amosUkwileEdimePhoto from '../assets/team/amos-ukwile-edime.jpg'
+
 export const initiatives = [
   {
     slug: 'ministry-support',
@@ -60,11 +63,10 @@ export const initiatives = [
     description:
       'The Education Support Initiative helps students and families access learning opportunities — from primary through tertiary education — while they grow in faith and purpose. We partner to remove financial barriers so young people can complete their studies and walk into the future God has prepared for them.',
     ambassador: {
-      name: 'Mrs. Ngozi Eze',
+      name: 'Bernice Emiene Abimaje',
       role: 'Current Ambassador',
-      photo:
-        'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=600&q=80',
-      bio: 'Coordinates scholarships and learner care across JJRSF education programmes.',
+      photo: berniceEmieneAbimajePhoto,
+      bio: 'Ambassador for the Education Support Initiative; also serves as Director of Training and JJRSF CLA Dean.',
     },
     impacts: [
       {
@@ -83,7 +85,7 @@ export const initiatives = [
         amountRaised: '₦7,650,000',
         credits:
           'Thankful to education partners and donors who sow into students’ futures.',
-        ambassadorInCharge: 'Mrs. Ngozi Eze',
+        ambassadorInCharge: 'Bernice Emiene Abimaje',
       },
       {
         id: 'esi-learning-kits',
@@ -99,7 +101,7 @@ export const initiatives = [
         financialBudget: '₦1,500,000',
         amountRaised: '₦620,000',
         credits: 'Local volunteers assisting with packing and delivery.',
-        ambassadorInCharge: 'Mrs. Ngozi Eze',
+        ambassadorInCharge: 'Bernice Emiene Abimaje',
       },
     ],
   },
@@ -161,11 +163,10 @@ export const initiatives = [
     description:
       'The Business Support Initiative empowers people to build sustainable livelihoods — helping beneficiaries start or grow small enterprises while walking in their God-given calling with dignity. We combine practical business support with faith-centered mentorship.',
     ambassador: {
-      name: 'Mr. Tunde Balogun',
+      name: 'Amos Ukwile Edime',
       role: 'Current Ambassador',
-      photo:
-        'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=600&q=80',
-      bio: 'Mentors entrepreneurs and oversees livelihood grants within the Business Support Initiative.',
+      photo: amosUkwileEdimePhoto,
+      bio: 'Ambassador for the Business Support Initiative; mentors entrepreneurs and leads business seminars across the JJRSF network.',
     },
     impacts: [
       {
@@ -184,7 +185,7 @@ export const initiatives = [
         amountRaised: '₦2,450,000',
         credits:
           'Business mentors volunteering time; donors partnering via Lay-Up Treasure.',
-        ambassadorInCharge: 'Mr. Tunde Balogun',
+        ambassadorInCharge: 'Amos Ukwile Edime',
       },
       {
         id: 'bsi-skills',
@@ -197,7 +198,7 @@ export const initiatives = [
         financialBudget: '₦1,800,000',
         amountRaised: '₦540,000',
         credits: 'Facilitators from CLA and marketplace partners.',
-        ambassadorInCharge: 'Mr. Tunde Balogun',
+        ambassadorInCharge: 'Amos Ukwile Edime',
       },
     ],
   },

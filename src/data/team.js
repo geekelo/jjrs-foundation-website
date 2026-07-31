@@ -4,6 +4,11 @@ import obehiOgbeborPhoto from '../assets/team/obehi-ogbebor.jpg'
 import mondayAhmedPhoto from '../assets/team/monday-ahmed.jpg'
 import estherEchePhoto from '../assets/team/esther-eche.jpg'
 import elogheneOtiedePhoto from '../assets/team/eloghene-otiede.jpg'
+import berniceEmieneAbimajePhoto from '../assets/team/bernice-emiene-abimaje.jpg'
+import kelvinKawenPhoto from '../assets/team/kelvin-kawen.jpg'
+import luckyObiomaNdukwePhoto from '../assets/team/lucky-obioma-ndukwe.jpg'
+import toyinBayodePhoto from '../assets/team/toyin-bayode.jpg'
+import amosUkwileEdimePhoto from '../assets/team/amos-ukwile-edime.jpg'
 import teamPlaceholderPhoto from '../assets/team/placeholder.jpg'
 
 export const currentTeamMembers = [
@@ -201,7 +206,167 @@ export const currentTeamMembers = [
         title: 'Developed and launched JJRSF and CLA tech products since 2024',
       },
     ],
-  }
+  },
+  {
+    id: 'bernice-emiene-abimaje',
+    name: 'Bernice Emiene Abimaje',
+    photo: berniceEmieneAbimajePhoto,
+    region: 'Africa — Nigeria',
+    phone: '+2348167752306',
+    email: 'berniceemiene@gmail.com',
+    linkedinUrl: 'https://www.linkedin.com/in/berniceemieneabimaje/',
+    contactFormUrl:
+      'mailto:berniceemiene@gmail.com?subject=Message%20for%20Bernice%20Emiene%20Abimaje',
+    claGraduate: true,
+    currentPositions: [
+      {
+        title: 'Ambassador',
+        organization: 'Education Support Initiative',
+        startDate: '2025',
+      },
+      {
+        title: 'Director of Training',
+        organization: 'JJRS Foundation',
+        startDate: '2021',
+      },
+      {
+        title: 'CLA Dean',
+        organization: 'JJRSF CLA',
+        startDate: '2021',
+      },
+    ],
+    previousPositions: [],
+    achievements: [
+      {
+        title: 'CLA Dean',
+      },
+      {
+        title: 'Director of Training',
+      },
+      {
+        title: 'Ambassador, Education Support Initiative',
+      },
+    ],
+  },
+  {
+    id: 'kelvin-kawen',
+    name: 'Kelvin Kawen',
+    photo: kelvinKawenPhoto,
+    region: 'Africa — Nigeria',
+    phone: '+2347039427998',
+    email: 'kelvinkawen@gmail.com',
+    linkedinUrl: 'https://www.linkedin.com/in/kelvin-kawen-26574b135',
+    contactFormUrl:
+      'mailto:kelvinkawen@gmail.com?subject=Message%20for%20Kelvin%20Kawen',
+    claGraduate: true,
+    currentPositions: [
+      {
+        title: 'Treasurer',
+        organization: 'JJRS Foundation',
+        startDate: '2020',
+      },
+    ],
+    previousPositions: [
+      {
+        title: 'Assistant Financial Secretary',
+        organization: 'JJRS Foundation',
+        startDate: '2019',
+        endDate: '2020',
+      },
+    ],
+    achievements: [
+      {
+        title:
+          'Holistic growth—professionally, spiritually, and in service.',
+      },
+    ],
+  },
+  {
+    id: 'lucky-obioma-ndukwe',
+    name: 'Lucky Obioma Ndukwe',
+    photo: luckyObiomaNdukwePhoto,
+    region: 'Africa — Nigeria',
+    phone: '+2348028366463',
+    email: 'luciano01ng@yahoo.com',
+    contactFormUrl:
+      'mailto:luciano01ng@yahoo.com?subject=Message%20for%20Lucky%20Obioma%20Ndukwe',
+    claGraduate: true,
+    currentPositions: [
+      {
+        title: 'Director of Services',
+        organization: 'JJRS Foundation',
+        startDate: '2024',
+      },
+    ],
+    previousPositions: [
+      {
+        title: 'Logistics and Protocol',
+        organization: 'JJRS Foundation',
+        startDate: '2011',
+        endDate: '2024',
+      },
+    ],
+    achievements: [
+      {
+        title: 'Ministering to the Ministers',
+      },
+      {
+        title: 'Training of Able Professional Protocols and Ushers',
+      },
+    ],
+  },
+  {
+    id: 'toyin-bayode',
+    name: 'Toyin Bayode',
+    photo: toyinBayodePhoto,
+    region: 'Africa — Nigeria',
+    phone: '+2348033675866',
+    email: 'toyinbayd@gmail.com',
+    contactFormUrl:
+      'mailto:toyinbayd@gmail.com?subject=Message%20for%20Toyin%20Bayode',
+    claGraduate: true,
+    currentPositions: [
+      {
+        title: 'Financial Secretary',
+        organization: 'JJRS Foundation',
+        startDate: '2026',
+      },
+    ],
+    previousPositions: [],
+    achievements: [
+      {
+        title:
+          'Cordial and effective teamwork with the Assistant Financial Secretary',
+      },
+      {
+        title: 'Preparation of monthly budgets',
+      },
+    ],
+  },
+  {
+    id: 'amos-ukwile-edime',
+    name: 'Amos Ukwile Edime',
+    photo: amosUkwileEdimePhoto,
+    region: 'Africa — Nigeria',
+    phone: '+2348034576947',
+    email: 'amos.edime@gmail.com',
+    contactFormUrl:
+      'mailto:amos.edime@gmail.com?subject=Message%20for%20Amos%20Ukwile%20Edime',
+    claGraduate: true,
+    currentPositions: [
+      {
+        title: 'Ambassador',
+        organization: 'Business Support Initiative',
+        startDate: 'Jul 2021',
+      },
+    ],
+    previousPositions: [],
+    achievements: [
+      {
+        title: 'Successfully held 8 business seminars',
+      },
+    ],
+  },
 ]
 
 export const previousTeamMembers = [
